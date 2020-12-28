@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách học viên</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="homework.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Danh sách học viên</h1>
+      <button id="add-student">
+        <i class="fas fa-plus-circle"> Thêm học viên</i>
+      </button>
+      <table id="content">
+        <tr>
+          <th>Họ tên</th>
+          <th>Năm sinh</th>
+          <th>Email</th>
+          <th>Số điện thoại</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("add-student").onclick = function () {
+        location.href = "createList.html";
+      };
+    </script>
+    <script>
+      $.ajax({
+        method: "GET",
+        url: "http://localhost:3000/users",
+      }).done(function (data) {
+        let content = `<tr>
+                    <th>${data[0].name}<th>
+                    <th>${data[0].year}<th>
+                    <th>${data[0].email}</th>
+                    <th>${data[0].phone}<th>
+                    <th></th>
+                    </tr>`;
+
+        for (let i = 1; i < data.length; i++) {
+          content += `<tr>
+                    <td>${data[i].name}<td>
+                    <td>${data[i].year}<td>
+                    <td>${data[i].email}</td>
+                    <td>${data[i].phone}<td>
+                    <td>
+            <a href="" class="edit"><i class="fas fa-edit"> Chỉnh sửa</i></a> |
+            <a href="" class="delete"><i class="fas fa-trash-alt"> Xóa</i></a>
+                    </td>
+                    </tr>`;
+        }
+
+        $("#content").html(content);
+      });
+
+      let deleteArrayButton = $(".delete");
+      for (let j = 0; j < deleteArrayButton.length; j++) {
+        $(deleteArrayButton[j]).click(function () {
+          $.ajax({
+            method: "DELETE",
+            url: "http://localhost:3000/users/" + `${j + 1}`,
+          }).done(function (data) {
+            $("#content").html(content);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

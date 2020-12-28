@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tạo danh sách học viên</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="homework.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" id="form">
+        <h1 class="create-list-title">Thêm mới học viên</h1>
+        <div class="row">
+          <label for="name">Họ tên <span> *</span> </label>
+          <input type="text" id="name" />
+        </div>
+        <div class="row">
+          <label for="yearOfBirth">Năm sinh</label>
+          <input type="text" id="yearOfBirth" />
+        </div>
+        <div class="row">
+          <label for="email">Email <span> *</span></label>
+          <input type="text" id="email" />
+        </div>
+        <div class="row">
+          <label for="phone">Phone <span> *</span></label>
+          <input type="tel" id="phone" />
+        </div>
+      </form>
+      <div class="button-box">
+        <button id="back-button">
+          <i class="fas fa-chevron-left"> Back</i>
+        </button>
+        <button id="save-button"><i class="fas fa-save"> Lưu</i></button>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.getElementById("back-button").onclick = function () {
+        location.href = "studentList.html";
+      };
+      document.getElementById("save-button").onclick = function () {
+        $.ajax({
+          method: "POST",
+          url: "http://localhost:3000/users",
+          data: {
+            name: $("#name").val(),
+            year: $("#yearOfBirth").val(),
+            email: $("#email").val(),
+            phone: $("#phone").val(),
+          },
+        });
+        location.href = "studentList.html";
+      };
+    </script>
+  </body>
+</html>
