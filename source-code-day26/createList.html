@@ -50,7 +50,20 @@
       document.getElementById("back-button").onclick = function () {
         location.href = "studentList.html";
       };
-      document.getElementById("save-button").onclick = function () {
+      // document.getElementById("save-button").onclick = function () {
+      //   $.ajax({
+      //     method: "POST",
+      //     url: "http://localhost:3000/users",
+      //     data: {
+      //       name: $("#name").val(),
+      //       year: $("#yearOfBirth").val(),
+      //       email: $("#email").val(),
+      //       phone: $("#phone").val(),
+      //     },
+      //   });
+      //   location.href = "studentList.html";
+      // };
+      $('#save-button').click(function () {
         $.ajax({
           method: "POST",
           url: "http://localhost:3000/users",
@@ -62,7 +75,8 @@
           },
         });
         location.href = "studentList.html";
-      };
+      });
+
     </script>
   </body>
 </html>
