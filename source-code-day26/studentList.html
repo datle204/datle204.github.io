@@ -44,19 +44,19 @@
         url: "https://studentlist2020.herokuapp.com/users",
       }).done(function (data) {
         let content = `<tr>
-                    <th>${data[0].name}<th>
-                    <th>${data[0].year}<th>
+                    <th>${data[0].name}</th>
+                    <th>${data[0].year}</th>
                     <th>${data[0].email}</th>
-                    <th>${data[0].phone}<th>
+                    <th>${data[0].phone}</th>
                     <th></th>
                     </tr>`;
 
         for (let i = 1; i < data.length; i++) {
           content += `<tr>
-                    <td>${data[i].name}<td>
-                    <td>${data[i].year}<td>
+                    <td>${data[i].name}</td>
+                    <td>${data[i].year}</td>
                     <td>${data[i].email}</td>
-                    <td>${data[i].phone}<td>
+                    <td>${data[i].phone}</td>
                     <td>
             <a href="#" class="edit"><i class="fas fa-edit"> Chỉnh sửa</i></a> |
             <a href="#" class="delete" id="${data[i].id}"><i class="fas fa-trash-alt"> Xóa</i></a>
