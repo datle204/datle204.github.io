@@ -2,13 +2,6 @@
   "users": [
     {
       "id": 1,
-      "name": "Họ tên",
-      "year": "Năm sinh",
-      "email": "Email",
-      "phone": "Số điện thoại"
-    },
-    {
-      "id": 2,
       "name": "Fernanda",
       "year": "2001",
       "email": "fhowton2@ebay.co.uk",
@@ -19,28 +12,28 @@
       "year": "1993",
       "email": "adadad@gmail.com",
       "phone": "00000-232332-123",
-      "id": 3
+      "id": 2
     },
     {
       "name": "dat",
       "year": "1997",
       "email": "datle@gmail.com",
       "phone": "09232-1324-1997",
-      "id": 4
+      "id": 3
     },
     {
       "name": "abc",
       "year": "2001",
       "email": "1332@gmail.com",
       "phone": "123-2434-32321",
-      "id": 5
+      "id": 4
     },
     {
       "name": "mot",
       "year": "1009",
       "email": "2323@gmail.com",
       "phone": "132434",
-      "id": 6
+      "id": 5
     }
   ]
 }
