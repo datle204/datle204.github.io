@@ -18,16 +18,21 @@
       <button id="add-student">
         <i class="fas fa-plus-circle"> Thêm học viên</i>
       </button>
-      <table id="content">
-        <tr>
-          <th>Họ tên</th>
-          <th>Năm sinh</th>
-          <th>Email</th>
-          <th>Số điện thoại</th>
-          <th></th>
-        </tr>
+      <table>
+        <thead>
+          <tr>
+            <th>Họ tên</th>
+            <th>Năm sinh</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody id="content"></tbody>
       </table>
     </div>
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -40,10 +45,13 @@
     </script>
     <script>
 
-      const prePrefix = "student-";
-      render();
+      const idPrefix = "student-";
+      $(() => {
+        renderStudents();
+      })
+      
 
-      function render(){
+      function renderStudents(){
        
 
         $.ajax({
@@ -60,7 +68,7 @@
                     <td>${data[i].phone}</td>
                     <td>
             <a href="#" class="edit"><i class="fas fa-edit"> Chỉnh sửa</i></a> |
-            <a href="#" class="delete" id="${prePrefix}${data[i].id}"><i class="fas fa-trash-alt"> Xóa</i></a>
+            <a href="#" class="delete" id="${idPrefix}${data[i].id}"><i class="fas fa-trash-alt"> Xóa</i></a>
                     </td>
                     </tr>`;
         }
@@ -77,11 +85,12 @@
           $(deleteArrayButton[j]).click(function () {
             $.ajax({
               method: "DELETE",
-              url: "https://studentlist2020.herokuapp.com/users/" + `${deleteArrayButton[j].id.replace("${prePrefix}","")}`
+              url: "https://studentlist2020.herokuapp.com/users/" + `${deleteArrayButton[j].id.replace(idPrefix,"")}`,
+            }).done(function(data){
+              render();
             });
           });
         }
-        render();
       }
       
     </script>
