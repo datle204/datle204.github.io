@@ -41,7 +41,7 @@
     <script>
       $.ajax({
         method: "GET",
-        url: "http://localhost:3000/users",
+        url: "https://studentlist2020.herokuapp.com/users",
       }).done(function (data) {
         let content = `<tr>
                     <th>${data[0].name}<th>
@@ -59,7 +59,7 @@
                     <td>${data[i].phone}<td>
                     <td>
             <a href="" class="edit"><i class="fas fa-edit"> Chỉnh sửa</i></a> |
-            <a href="" class="delete"><i class="fas fa-trash-alt"> Xóa</i></a>
+            <a href="" class="delete" id="${data[i].id}"><i class="fas fa-trash-alt"> Xóa</i></a>
                     </td>
                     </tr>`;
         }
@@ -72,7 +72,7 @@
         $(deleteArrayButton[j]).click(function () {
           $.ajax({
             method: "DELETE",
-            url: "http://localhost:3000/users/" + `${j + 1}`,
+            url: "https://studentlist2020.herokuapp.com/users/" + `${deleteArrayButton[j].id}`,
           }).done(function (data) {
             $("#content").html(content);
           });
