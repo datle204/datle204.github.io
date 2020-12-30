@@ -18,53 +18,24 @@
       <button id="add-student">
         <i class="fas fa-plus-circle"> Thêm học viên</i>
       </button>
-      <table>
-        <thead>
-          <tr>
-            <th>Họ tên</th>
-            <th>Năm sinh</th>
-            <th>Email</th>
-            <th>Số điện thoại</th>
-            <th></th>
-          </tr>
-        </thead>
+      <div style="overflow-x:auto;">
+        <table>
+          <thead>
+            <tr>
+              <th>Họ tên</th>
+              <th>Năm sinh</th>
+              <th>Email</th>
+              <th>Số điện thoại</th>
+              <th></th>
+            </tr>
+          </thead>
 
-        <tbody id="content"></tbody>
-      </table>
-      <div class="edit-box">
-        <form action="#" id="form">
-          <h1 class="create-list-title">Chỉnh sửa thông tin</h1>
-          <div class="row">
-            <label for="name">Họ tên <span> *</span> </label>
-            <input type="text" id="name"/>
-          </div>
-          <div class="row">
-            <label for="yearOfBirth">Năm sinh</label>
-            <input type="text" id="yearOfBirth" />
-          </div>
-          <div class="row">
-            <label for="email">Email <span> *</span></label>
-            <input type="text" id="email" />
-          </div>
-          <div class="row">
-            <label for="phone">Phone <span> *</span></label>
-            <input type="tel" id="phone" />
-          </div>
-        </form>
-        <div class="button-box">
-          <button id="back-button">
-            <i class="fas fa-chevron-left"> Back</i>
-          </button>
-          <button id="edit-button"><i class="fas fa-save"> Lưu mới</i></button>
-        </div>
+          <tbody id="content"></tbody>
+        </table>
       </div>
     </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-      crossorigin="anonymous"
-    ></script>
+    <script src="/js/jquery-3.5.1.min.js"></script>
     <script>
       document.getElementById("add-student").onclick = function () {
         location.href = "createList.html";

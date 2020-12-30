@@ -1,25 +1,25 @@
 const idPrefixDel = "student-";
-const idPrefixEdit = "student-id-"
+const idPrefixEdit = "student-id-";
 
 $(() => {
-renderStudents();
+  renderStudents();
 });
 
 function renderStudents() {
-$.ajax({
+  $.ajax({
     method: "GET",
     url: "https://studentlist2020.herokuapp.com/users",
-}).done(function (data) {
+  }).done(function (data) {
     let content = "";
 
     for (let i = 0; i < data.length; i++) {
-    content += `<tr>
+      content += `<tr>
             <td>${data[i].name}</td>
             <td>${data[i].year}</td>
             <td>${data[i].email}</td>
             <td>${data[i].phone}</td>
             <td>
-                <a href="#" class="edit" id = "${idPrefixEdit}${data[i].id}" ><i class="fas fa-edit"> Chỉnh sửa</i></a> |
+                <a href="editStudent.html?id=${data[i].id}" class="edit" id = "${idPrefixEdit}${data[i].id}" ><i class="fas fa-edit"> Chỉnh sửa</i></a> |
                 <a href="#" class="delete" id="${idPrefixDel}${data[i].id}"><i class="fas fa-trash-alt"> Xóa</i></a>
             </td>
             </tr>`;
@@ -28,42 +28,21 @@ $.ajax({
     $("#content").html(content);
 
     addEventDeleteStudent();
-    addEventEditStudent();
-});
+  });
 }
 
 function addEventDeleteStudent() {
-let deleteArrayButton = $(".delete");
-for (let i = 0; i < deleteArrayButton.length; i++) {
+  let deleteArrayButton = $(".delete");
+  for (let i = 0; i < deleteArrayButton.length; i++) {
     $(deleteArrayButton[i]).click(function () {
-    $.ajax({
+      $.ajax({
         method: "DELETE",
         url:
-        "https://studentlist2020.herokuapp.com/users/" +
-        `${deleteArrayButton[i].id.replace(idPrefixDel, "")}`,
-    }).done(function (data) {
+          "https://studentlist2020.herokuapp.com/users/" +
+          `${deleteArrayButton[i].id.replace(idPrefixDel, "")}`,
+      }).done(function (data) {
         renderStudents();
+      });
     });
-    });
-}
-}
-
-function addEventEditStudent(){
-
-    let editArrayButton = $(".edit");
-    for (let i = 0; i < editArrayButton.length; i++){
-        $(editArrayButton[i].click(function(){
-            $('.edit-box').css("display","block");
-            // $.ajax({
-            //     method: "PUT",
-            //     url: "https://studentlist2020.herokuapp.com/users/" + `${editArrayButton[i].id.replace(idPrefixEdit, "")}`,
-            //     data: {
-            //         name: 'Hieu dep trai',
-            //         email: 'deptrai@gmail.com'
-            //     }
-            // }).done(function(data){
-            //     renderStudents();
-            // });
-        }))
-    }
+  }
 }
