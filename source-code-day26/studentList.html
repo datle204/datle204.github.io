@@ -44,55 +44,52 @@
       };
     </script>
     <script>
-
       const idPrefix = "student-";
       $(() => {
         renderStudents();
-      })
-      
+      });
 
-      function renderStudents(){
-       
-
+      function renderStudents() {
         $.ajax({
-        method: "GET",
-        url: "https://studentlist2020.herokuapp.com/users",
-      }).done(function (data) {
-        let content = "";
+          method: "GET",
+          url: "https://studentlist2020.herokuapp.com/users",
+        }).done(function (data) {
+          let content = "";
 
-        for (let i = 0; i < data.length; i++) {
-          content += `<tr>
+          for (let i = 0; i < data.length; i++) {
+            content += `<tr>
                     <td>${data[i].name}</td>
                     <td>${data[i].year}</td>
                     <td>${data[i].email}</td>
                     <td>${data[i].phone}</td>
                     <td>
-            <a href="#" class="edit"><i class="fas fa-edit"> Chỉnh sửa</i></a> |
-            <a href="#" class="delete" id="${idPrefix}${data[i].id}"><i class="fas fa-trash-alt"> Xóa</i></a>
+                        <a href="#" class="edit"><i class="fas fa-edit"> Chỉnh sửa</i></a> |
+                        <a href="#" class="delete" id="${idPrefix}${data[i].id}"><i class="fas fa-trash-alt"> Xóa</i></a>
                     </td>
                     </tr>`;
-        }
+          }
 
-        $("#content").html(content);
+          $("#content").html(content);
 
-        addEventDeleteStudent();
-      });
+          addEventDeleteStudent();
+        });
       }
-      
-      function addEventDeleteStudent(){
+
+      function addEventDeleteStudent() {
         let deleteArrayButton = $(".delete");
         for (let j = 0; j < deleteArrayButton.length; j++) {
           $(deleteArrayButton[j]).click(function () {
             $.ajax({
               method: "DELETE",
-              url: "https://studentlist2020.herokuapp.com/users/" + `${deleteArrayButton[j].id.replace(idPrefix,"")}`,
-            }).done(function(data){
+              url:
+                "https://studentlist2020.herokuapp.com/users/" +
+                `${deleteArrayButton[j].id.replace(idPrefix, "")}`,
+            }).done(function (data) {
               renderStudents();
             });
           });
         }
       }
-      
     </script>
   </body>
 </html>
