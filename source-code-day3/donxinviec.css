@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: #d4d2d2;
+    
+}
+.container{
+    margin: auto;
+    width: 60%;
+    background-color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+}
+
+p{
+    padding-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+    
+}
+
+p.top-text{
+    padding-top: 20px;
+    text-align: center;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+ p.second-top-text{
+    text-align: center;
+    padding-top: 0px;
+    text-transform: uppercase;
+}  
+
+h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+div#bottom{
+    margin-left: 50%;
+    margin-top: 30px;
+
+}
+
+div#bottom p{
+    text-align: center;
+}
+

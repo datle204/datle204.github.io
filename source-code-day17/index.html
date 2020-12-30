@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Tieu de -->
+        <h1>Tính Toán</h1>
+        <div class="result">
+            <div class="row">
+                <div class="out-put">
+                    <input type="text" id="result"></input>
+                </div>
+                <button class="btn" value="reset-all" onclick= "result.value = '' ">Reset</button>
+            </div>
+        </div>
+        <div class="group-btn">
+            <div class="row">
+                <!-- Button thực hiện phép cộng -->
+                <button class="btn" value="+" onclick="result.value += this.value">+</button>
+                <!-- Button thực hiện phép trừ -->
+                <button class="btn" value="-" onclick="result.value += this.value">-</button>
+                <!-- Button thực hiện phép nhân -->
+                <button class="btn" value="*" onclick="result.value += this.value">x</button>
+            </div>
+            <div class="row">
+                <!-- Button thực hiện phép chia -->
+                <button class="btn" value="/" onclick="result.value += this.value">:</button>
+                <!-- Button thực hiện phép bình phương-->
+                <button class="btn" value="**2" onclick="result.value = Math.pow(result.value,2)">a²</button>
+                <!-- Button thực hiện lấy dư-->
+                <button class="btn" value="%" onclick="result.value += this.value">%</button>
+            </div>
+            <div class="row">
+                <!-- Button viết số thập phân -->
+                <button class="btn" value="." onclick="result.value += this.value">.</button>
+                 <!-- Button tính căn bậc 2-->
+                 <button class="btn" value="" onclick="result.value = Math.sqrt(result.value)">²√</button>
+
+                <!-- Button thực hiện phép bằng-->
+                <button class="btn" value="=" onclick="result.value = eval(result.value)">=</button>
+            </div>
+            <div class="row">
+
+            </div>
+            <!-- Button các số từ 0 -> 9 -->
+            <div class="row">
+                <button class="btn number-btn" value="1" onclick="result.value += this.value">1</button>
+                <button class="btn number-btn" value="2" onclick="result.value += this.value">2</button>
+                <button class="btn number-btn" value="3" onclick="result.value += this.value">3</button>
+            </div>
+            <div class="row">
+                <button class="btn number-btn" value="4" onclick="result.value += this.value">4</button>
+                <button class="btn number-btn" value="5" onclick="result.value += this.value">5</button>
+                <button class="btn number-btn" value="6" onclick="result.value += this.value">6</button>
+            </div>
+            <div class="row">
+                <button class="btn number-btn" value="7" onclick="result.value += this.value">7</button>
+                <button class="btn number-btn" value="8" onclick="result.value += this.value">8</button>
+                <button class="btn number-btn" value="9" onclick="result.value += this.value">9</button>
+            </div>
+            <div class="row">
+                <button class="btn number-btn" value="0" onclick="result.value += this.value">0</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

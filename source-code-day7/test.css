@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Css cho trang chu */
+a{
+    text-decoration: none;
+    color: rgb(88, 88, 192);
+}
+
+
+
+a:hover{
+    color: orange;
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container{
+    width: 100%;
+   
+}
+
+.row{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.row .the-thao{
+    width: 30%;
+    margin: 40px;
+    text-align: center;
+}
+
+.row .the-thao:nth-child(2), .the-thao:nth-child(5){
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.row img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    transition-duration: 1.5s;
+}
+
+.row img:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.the-thao h2{
+    padding-bottom: 30px;
+}
+
+/* Css cho trang ronaldo */
+
+.container-cr7{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.container-cr7 h2{
+    padding: 30px;
+    color:  rgb(88, 88, 192);
+}
+
+.container-cr7 p{
+    padding: 50px;
+    padding-top: 0px;
+    font-size: 18px;
+}
+
+.container-cr7 img{
+    padding-bottom: 30px;
+    overflow: hidden;
+    height: 500px;
+    
+}
+.container-cr7 h1{
+    padding-bottom: 0px;
+}
+
+.container-cr7{
+    background-color: #9e9fa00f;
+}
+i{
+    position:fixed;
+    top:20px;
+    left:10px;
+    font-size: 20px;
+}
+
+
+
+/* Css cho trang Cong Phuong */
+
+.container-cp{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.container-cp h2{
+    padding: 30px;
+    color:  rgb(88, 88, 192);
+}
+
+.container-cp p{
+    padding: 50px;
+    padding-top: 0px;
+    font-size: 18px;
+}
+
+.container-cp img{
+    padding-bottom: 30px;
+    overflow: hidden;
+    height: 500px;
+
+}
+.container-cp h1{
+    padding-bottom: 0px;
+}
+.container-cp{
+    background-color: #9e9fa00f;
+}
+
+/* Css cho trang filip nguyen */
+
+.container-fn{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.container-fn h2{
+    padding: 30px;
+    color:  rgb(88, 88, 192);
+}
+
+.container-fn p{
+    padding: 50px;
+    padding-top: 0px;
+    font-size: 18px;
+}
+
+.container-fn img{
+    padding-bottom: 30px;
+    overflow: hidden;
+    height: 500px;
+}
+.container-fn h1{
+    padding-bottom: 0px;
+}
+
+.container-fn{
+    background-color: #9e9fa00f;
+}
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form action="#" method="POSt"> -->
+    <h1>Login Form</h1>
+    <label for="user-name">Tên đăng nhập </label><br />
+    <input type="text" placeholder="Nhập tên đăng nhập" id="user-name" name="userName"><br /><br />
+    <label for="pass"> Password</label><br />
+    <input type="password" placeholder="Nhập mật khẩu" id="pass" name="passWord"><br /><br />
+    <label for="confirm-pass">Confirm Password</label><br />
+    <input type="password" placeholder="Xác nhận mật khẩu" id="confirm-pass" name="confirmPass"><br /><br />
+    <button type="submit" onclick="checkInfo()">Đăng ký</button>
+    <!-- </form> -->
+    <script>
+
+        function checkInfo() {
+            var username = document.getElementById("user-name").value;
+            var pass = document.getElementById("pass").value;
+            var confirm_pass = document.getElementById("confirm-pass").value;
+
+            if (username == "") {
+                alert("Fail, Hãy nhập tên đăng nhập");
+
+            }
+
+            else if (username.length > 20) {
+                alert("Fail, Tên đăng nhập không được vượt quá 20 ký tự");
+
+            }
+            else if (pass == "") {
+                alert("Fail, Hãy nhập mật khẩu");
+
+            }
+
+            else if (pass.length < 6 || pass.length > 32) {
+                alert("Fail, Password phải có từ 6 đến 32 ký tự");
+
+            }
+
+            else if (confirm_pass == "") {
+                alert("Fail, Hãy nhập xác nhận mật khẩu");
+ 
+            }
+            else if (pass != confirm_pass) {
+                    alert("Fail, Xác nhận mật khẩu không đúng, xin thử lại");
+
+            }
+            else {
+                alert("Pass, Tạo tài khoản thành công");
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- // Bai2: Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng
+nhập vào. Nếu hợp lệ trả về "Pass", nếu không hợp lệ trả về "Fail".
+
+// Giả sử tham số đầu vào là 1 object có dạng như sau (giá trị của thuộc tính là do người dùng nhập và đều là chuỗi):
+
+// {
+// username: "username",
+// password: "secret",
+// confirm: "secret"
+// }
+// Hãy kiểm tra username phải khác rỗng và không được vượt quá 20, ký tự, password phải có độ dài từ 6 đến 32 ký tự,
+confirm phải giống password. -->

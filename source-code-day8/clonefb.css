@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#F0F2F5;
+}
+
+.container{
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-block{
+    width: 55%;
+    padding-right: 20px;
+    margin-top: -85px;
+    font-family: 'Roboto', sans-serif;
+}
+.left-block img{
+    width: 70%;
+    margin: -35px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    object-fit: contain;
+   
+}
+.left-block h2{
+    color: #1C1E21;
+    font-size: 25px;
+    
+}
+
+.right-block{
+    width: 45%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-block form{
+    width: 90%;
+    margin: 30px auto;
+    border: 1px solid #f3eef0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.right-block form input{
+    width: 90%;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #f3eef0;
+    font-size: 16px;
+}
+.right-block form input:focus{
+    outline: none;
+    caret-color: #1877f2;
+    border-color:  #1877f2;
+}
+button{
+    margin-top: 20px;
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #1877f2;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover{
+    background-color: #166FE5;
+}
+
+a.forget-pass{
+    padding-top: 15px;
+    color: #1E79F2;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 16px;
+    text-align: center;
+    width: 90%;
+}
+
+.registration{
+    width: 50%;
+    background-color: #42b72a;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.registration:hover{
+    background-color: #55A523;
+}
+.registration a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.right-block p{
+    text-align: center;
+    padding:0 20px;
+    font-size: 14px;
+}
+
+.right-block p a.page-create{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.shadow{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+

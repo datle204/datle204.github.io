@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+}
+
+.block{
+    
+    width: 20%;
+    height: 300px;
+    margin: 30px;
+    
+}
+
+.small-block{
+    background-image: url('https://cf.shopee.vn/file/5eea2a5ab325005fb8d553e58e95b7f5_tn');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 200px;
+    
+}
+
+.sale{
+    background-color: rgba(255,212,36,.9);
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.percent{
+    color: red;
+    font-weight: bold;
+}
+
+p.text{
+    text-transform: uppercase;
+    color: white;
+}
+
+img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 160px;
+}
+
+p.price{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+span.real-price{
+    font-size: 25px;
+}
+
+
+.sold{
+    font-size: 18px;
+    text-align: center;
+    border: 1px;
+    margin-top: 5px;
+    background-color: red;
+    border-radius: 8px;
+    height: 25px;
+}
+
+.quantity{
+    width: 60%;
+    background-color: #ffbda6;
+    float:right;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 100%;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}

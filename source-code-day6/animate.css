@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Css bai 1 */
+
+.login{
+    width: 200px;
+    height: 100px;
+    background-color: #51a8f3;
+    color: #eae2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    transition-duration: 1.5s;
+}
+
+.login:hover{
+    background-color: #22d822;
+    border-radius: 50%;
+}
+
+/* Css bai 2 */
+
+.container{
+    width: 900px;
+    margin: 50px auto;
+}
+
+.container .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container img{
+    width: 33.3333%;
+    padding: 10px;
+    overflow: hidden;
+    transition-duration: 1.2s;
+}
+
+
+.container img:hover{
+    transform: scale(1.3);
+}
+
+/* Css bai 3 */
+
+img.bai3{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 100px auto;
+    animation-name: nhip-dap;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes nhip-dap {
+    10%{
+        transform: scale(1.1);
+    }
+    20%{
+        transform: scale(1.0);
+    }
+
+    40%{
+        transform: scale(1.3);
+    }
+    60%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+/* Css bai 4 */
+
+.bai4{
+    margin: 50px auto;
+    text-align: center;
+}
+.bai4 p{
+    padding: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.bai4 .animate-text{
+    width: 150px;
+    height: 20px;
+    margin: auto;
+    color: white;
+}
+
+.animate-text::after{
+    content: "Coding";
+    background-color: orange;
+    animation-name: change-text;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes change-text{
+    10%{    
+        content: "Teaching";
+        background-color: violet;
+    }
+    60%{
+        content: "Learning";
+        background-color: green;
+    }
+
+}
+

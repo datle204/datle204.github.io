@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select {
+            width: 40px;
+            margin-left: 13px;
+            color: red;
+        }
+        .container{
+            width: 30%;
+            margin: 50px auto;
+            height: 300px;
+            background-color: #c9f5f5;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Chuyển đổi tiền tệ</h1>
+        <input type="text" placeholder="Nhập tố tiền" id="input-money">
+        <select name="" id="select-currency">
+            <option value="dola">$</option>
+            <option value="euro">&euro;</option>
+        </select><br /><br />
+        <button type="button" onclick="convert()">Chuyển đổi sang Việt Nam Đồng</button>
+        <p id="text"></p>
+    </div>
+
+    <script>
+        function convert() {
+            let value = document.getElementById("input-money").value;
+            let currency = document.getElementById("select-currency").value;
+
+            if (currency == "dola") {
+                let convertM = value * 23060;
+                document.getElementById("text").innerHTML = `${value} $ = ${convertM} ₫`;
+                
+            }
+
+            if (currency == "euro") {
+                let convertM = value * 26719;
+                document.getElementById("text").innerHTML = `${value} &euro; = ${convertM} ₫`;
+                
+            }
+
+            
+
+        }
+    </script>
+</body>
+
+</html>
+<!-- ádsdsd -->

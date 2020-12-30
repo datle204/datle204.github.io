@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        padding: 15px;
+        padding-bottom: 0px;
+      }
+      /* Css block 1 */
+      .block-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+
+      .small-block-1 {
+        width: 60px;
+        height: 30px;
+        background-color: blue;
+        margin-right: 15px;
+      }
+      /* box cuoi cung set margin-right : 0px */
+      .small-block-1:nth-last-child(1) {
+        margin-right: 0px;
+      }
+      
+      /* Css block 2 */
+      .block-2 {
+        background-color: blue;
+        height: 100vh;
+      }
+
+      @media (min-width: 768px) {
+        .block-1 {
+          justify-content: flex-start;
+          flex-direction: row;
+          margin-bottom: 30px;
+        }
+
+        .small-block-1 {
+          width: 90px;
+        }
+
+        .small-block-1:nth-last-child(1){
+          margin-left: auto;
+        }
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- khoi tren -->
+      <div class="block-1">
+        <div class="small-block-1"></div>
+        <div class="small-block-1"></div>
+        <div class="small-block-1"></div>
+      </div>
+      <!-- khoi duoi -->
+      <div class="block-2"></div>
+    </div>
+  </body>
+</html>

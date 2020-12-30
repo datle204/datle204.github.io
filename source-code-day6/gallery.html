@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gellery</title>
+</head>
+<style>
+    .gallery{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    figure{
+        width: 33.3333%;  
+    }
+
+    .anh-1 img{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        
+    }
+    .anh-2 img{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    .anh-3 img{
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+    figcaption{
+        text-align: center;
+        padding-top: 20px;
+        transition-duration: 3s;
+    }
+    .first-img{
+        transition-duration: 3s;
+    }
+    .first-img:hover{
+        border-radius: 50%;
+        opacity: 0.3;
+    }
+    .cap-1:hover {
+        color: red;
+    }
+    .cap-2:hover {
+        color: yellow;
+    }
+    .cap-3:hover {
+        color: green;
+    }
+
+    .second-img{
+        transition-duration: 3s;
+    }
+
+    .second-img:hover{
+        transform: scale(1.2);
+    }
+
+    .third-img{
+        transition-duration: 3s;
+    }
+
+    .third-img:hover{
+        transform: rotate(270deg);
+        opacity: 0.3;
+    }
+
+</style>
+
+<body>
+
+    <div class="gallery">
+        <figure class="anh-1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+                alt="anh-1" class="first-img"/>
+            <figcaption class="cap-1">anh-1</figcaption>
+        </figure>
+        <figure class="anh-2">
+            <img src="https://img.vn/uploads/thuvien/viber-image-2019-08-06-10-40-38-jpg-20190807145944LO3qbinQdG.jpg"
+                alt="anh-2" class="second-img"/>
+            <figcaption class="cap-2">anh-2</figcaption>
+        </figure>
+        <figure class="anh-3">
+            <img src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg"
+                alt="anh-3" class="third-img"/>
+            <figcaption class="cap-3">anh-3</figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>

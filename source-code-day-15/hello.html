@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="hello()">Click Here</button>
+    <script>
+        function hello(){
+            let value = prompt("Where are you from?");
+            switch(value){
+                case "Anh": 
+                    alert("Hello");
+                    break;
+                case "Đức": 
+                    alert("Hallo");
+                    break;
+                case "Nhật": 
+                    alert("こんにちは");
+                    break;
+                case "Hàn Quốc":
+                    alert("여보세요");
+                    break;
+                default:
+                    alert("Xin Chào");
+            }
+
+        }
+    </script>
+</body>
+</html>
+
+<!-- Viết hàm translate() có tác dụng dịch từ "Hello" sang 5 thứ 
+tiếng khác nhau (tự chọn) với tham số truyền vào là mã quốc gia 
+(tham số lấy từ prompt),
+sử dụng switch và mặc định dịch sang tiếng Việt -->

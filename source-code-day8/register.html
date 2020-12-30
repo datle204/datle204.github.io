@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Register Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <div class="intro">
+            <h2>Tạo tài khoản mới</h2>
+            <p>Nhanh chóng và dễ dàng.</p>
+        </div>
+        <form action="https://www.facebook.com/" method="POST">
+            <input type="text" id="surname" placeholder="  Họ" name="surname" required>
+            <input type="text" id="name" placeholder="  Tên" name="name" required>
+            <input type="text" id="phone-email" placeholder="  Số điện thoại hoặc email" name="phone-email" required>
+            <input type="password" id="password" placeholder="  Mật khẩu mới" name="password" required>
+            <div class="select-box">
+                <label for="" class="title">Ngày sinh</label>
+                <div class="select-option">
+                    <select id="day" name="day">
+                        <option value="">Ngày</option>
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select id="month" name="month">
+                        <option value="">Tháng</option>
+                        <option value="1" selected>Tháng 1</option>
+                        <option value="2">Tháng 2</option>
+                        <option value="3">Tháng 3</option>
+                        <option value="4">Tháng 4</option>
+                        <option value="5">Tháng 5</option>
+                        <option value="6">Tháng 6</option>
+                        <option value="7">Tháng 7</option>
+                        <option value="8">Tháng 8</option>
+                        <option value="9">Tháng 9</option>
+                        <option value="10">Tháng 10</option>
+                        <option value="11">Tháng 11</option>
+                        <option value="12">Tháng 12</option>
+                    </select>
+                    <select id="year" name="year">
+                        <option value="">Năm</option>
+                        <option value="1980" selected>1980</option>
+                        <option value="1981" selected> 1981</option>>
+                        <option value="1982" selected> 1982</option>
+                        <option value="1983" selected> 1983</option>
+                        <option value="1984" selected> 1984</option>
+                        <option value="1985" selected> 1985</option>
+                        <option value="1986" selected> 1986</option>
+                        <option value="1987" selected> 1987</option>
+                        <option value="1988" selected> 1988</option>
+                        <option value="1989" selected> 1989</option>
+                        <option value="1990" selected> 1990</option>
+                        <option value="1991" selected> 1991</option>
+                        <option value="1992" selected> 1992</option>
+                        <option value="1993" selected> 1993</option>
+                        <option value="1994" selected> 1994</option>
+                        <option value="1995" selected> 1995</option>
+                        <option value="1996" selected> 1996</option>
+                        <option value="1997" selected> 1997</option>
+                        <option value="1998" selected> 1998</option>
+                        <option value="1999" selected> 1999</option>
+                        <option value="2000" selected> 2000</option>
+                        <option value="2001" selected> 2001</option>
+                        <option value="2002" selected> 2002</option>
+                        <option value="2003" selected> 2003</option>
+                        <option value="2004" selected> 2004</option>
+                        <option value="2005" selected> 2005</option>
+                        <option value="2006" selected> 2006</option>
+                        <option value="2007" selected> 2007</option>
+                        <option value="2008" selected> 2008</option>
+                        <option value="2009" selected> 2009</option>
+                        <option value="2010" selected> 2010</option>
+                        <option value="2011" selected> 2011</option>
+                        <option value="2012" selected> 2012</option>
+                        <option value="2013" selected> 2013</option>
+                        <option value="2014" selected> 2014</option>
+                        <option value="2015" selected> 2015</option>
+                        <option value="2016" selected> 2016</option>
+                        <option value="2017" selected> 2017</option>
+                        <option value="2018" selected> 2018</option>
+                        <option value="2019" selected> 2019</option>
+                        <option value="2020" selected> 2020</option>
+                    </select>
+                </div>
+            </div>
+            <div class="select-box">
+                <label for="" class="title">Giới tính</label>
+                <div class="select-option">
+                    <div class="select-option1">
+                        <label for="female">Nữ </label><input type="radio" id="female" name="gender" value="female">
+                    </div>
+                    <div class="select-option2">
+                        <label for="male">Nam </label><input type="radio" id="male" name="gender" value="male">
+                    </div>
+                    <div class="select-option2">
+                        <label for="other">Khác </label><input type="radio" id="other" name="gender" value="other">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <p class="footer-text">Bằng cách nhấp vào Đăng ký, bạn đồng ý với <span>Điều khoản, Chính sách dữ liệu và Chính
+                sách cookie</span>
+            của chúng tôi. Bạn có thể nhận được thông báo của chúng tôi qua SMS và huỷ nhận bất kỳ lúc nào.</p>
+
+        <button type="submit">
+            Đăng ký
+        </button>
+
+    </div>
+
+</body>
+
+</html>

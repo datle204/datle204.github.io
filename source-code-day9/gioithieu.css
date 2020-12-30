@@ -1,0 +1,105 @@
+/* Css phần giới thiệu */
+
+
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.left-block-intro{
+    width: 45%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.left-block-intro img{
+    width: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.right-block-intro{
+    text-align: left;
+    padding-left: 30px;
+    width: 45%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.right-block-intro h1{
+    text-align: left;
+}
+
+.right-block-intro p{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.custom-list .right-block-intro ul li{
+    list-style-type: circle;
+    float: none;
+    font-size: 18px;
+}
+
+.left-block-intro img:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+/* Css small project */
+h1.title{
+    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.project a{
+    display: inline-block;
+    width: 33.33%;
+    color: black;
+    height: 400px;
+    
+}
+.project a.first, a.second{
+    margin-right: 20px;
+    
+}
+.small-project{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.small-project img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.small-project h2{
+    text-align: center;
+    padding: 20px 10px;
+    color: black;
+    
+}
+
+.small-project img:hover{
+    opacity: 0.8;
+}
+
+.small-project h2:hover{
+    color: orange;
+}
+
+i.back-website{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: blue;
+    font-size: 18px;
+    position: fixed;
+}

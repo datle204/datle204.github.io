@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F0F2F5;
+}
+
+.container{
+    width: 500px;
+    margin: 100px auto;
+    background-color: white;
+    height: 630px;
+    border: 1px solid #f3eef0;
+    border-radius: 6px;
+}
+
+
+.intro{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2d1d8;
+}
+.intro h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+form{
+    width: 100%;
+    padding: 20px; 
+    margin: auto;
+    text-align: justify;
+}
+
+form input#surname{
+    width: 48%;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid #e2d1d8;
+}
+
+form input#name{
+    width: 48%;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid #e2d1d8;
+}
+
+form input#phone-email{
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid #e2d1d8;
+    margin-top: 10px;
+}
+
+form input#password{
+    width: 100%;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px solid #e2d1d8;
+    margin-top: 10px;
+}
+
+.select-box{
+    margin-top: 20px;
+}
+.select-box label.title{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.select-option{
+    display: flex;
+    justify-content: space-between;
+}
+.select-box select{
+    width: 30%;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+.select-option1{
+    border: 1px solid grey;
+    width: 30%;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.select-option2{
+    border: 1px solid grey;
+    width: 30%;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.select-option3{
+    border: 1px solid grey;
+    width: 30%;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+p.footer-text{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+p.footer-text span{
+    color: blue
+}
+
+button{
+    margin: 50px auto;
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    background-color:#42b72a;
+    border-radius: 6px;
+    border: 1px;
+
+}
+
+.shadow{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}

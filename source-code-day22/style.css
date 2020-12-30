@@ -1,0 +1,786 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+/* Css Header */
+
+header {
+  padding-top: 20px;
+  height: 900px;
+  background-image: url(/project-img/main\ illustration.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+header .navbar {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+header .navbar-brand {
+  padding-top: 0px;
+}
+.navbar-nav {
+  padding-left: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1rem;
+  padding-right: 30px;
+  padding-left: 0px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #66bb6a;
+}
+
+.navbar-light .navbar-nav .active .nav-link {
+  color: #66bb6a;
+}
+
+/* Css div sign-up */
+.sign-up-link {
+  width: 128px;
+  height: 48px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+}
+.sign-up-link a {
+  padding: 5px;
+  color: white;
+}
+
+.sign-up-link a:hover {
+  color: #66bb6a;
+}
+
+/* Css div intro */
+header .intro {
+  max-width: 473px;
+  padding-right: 20px;
+  margin-top: 120px;
+}
+
+.intro h1 {
+  font-size: 2.88rem;
+  line-height: 4rem;
+  color: #000000;
+  padding-bottom: 1.75rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro p {
+  font-size: 1.12rem;
+  line-height: 2rem;
+  color: #263238;
+  padding-bottom: 3.37rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.intro button.btn-success {
+  width: 144px;
+  height: 48px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Css section */
+
+section {
+  background-image: url(/project-img/wrap-shape.png);
+  height: 4640px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 600px;
+  width: 100%;
+}
+
+/* Css block opportunity */
+section .opportunity {
+  padding: 72px;
+  padding-top: 300px;
+  text-align: center;
+}
+
+.op-top-content {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.opportunity .op-top-content h2 {
+  font-size: 2.25rem;
+  line-height: 4rem;
+  color: #000000;
+}
+.opportunity .op-top-content p {
+  font-size: 1.12rem;
+  line-height: 2rem;
+  color: #324148;
+  padding-bottom: 70px;
+}
+
+.small-box {
+  padding-top: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-shadow: 0px 25px 25px rgba(118, 196, 125, 0.314538);
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 350px;
+}
+
+.special-box {
+  padding-top: 4rem;
+  background-color: #66bb6a;
+}
+
+.op-bottom-content .small-box img {
+  padding-bottom: 1.25rem;
+}
+
+.op-bottom-content .small-box h3.bottom-title {
+  font-size: 1.12rem;
+  line-height: 1.5rem;
+  padding-bottom: 1.375rem;
+  color: #263238;
+}
+
+.op-bottom-content .small-box p.bottom-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #263238;
+}
+
+.op-bottom-content .special-box h3.bottom-title {
+  color: #ffffff;
+}
+
+.op-bottom-content .special-box p.bottom-text {
+  color: #e8f5e9;
+}
+
+/* Css block invest */
+
+.invest {
+  padding: 82px 72px 115px 72px;
+}
+
+.invest h2 {
+  font-size: 2.25rem;
+  line-height: 4rem;
+  color: #000000;
+  padding-bottom: 14px;
+}
+
+.invest p.big-invest-detail {
+  font-size: 1.12rem;
+  line-height: 2rem;
+  color: #324148;
+  padding-bottom: 73px;
+}
+.invest .same-size {
+  border-radius: 5px;
+  padding-top: 40px;
+  padding-left: 72px;
+  padding-right: 72px;
+  height: 400px;
+}
+
+.same-size .invest-post-title {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 2.8px;
+  color: #66bb6a;
+  padding-bottom: 17px;
+  text-transform: uppercase;
+}
+.same-size .white-line {
+  width: 56px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.same-size .invest-post-big-title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+  padding-bottom: 1.12rem;
+}
+
+.same-size .post-detail {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #e2efd2;
+}
+
+.same-size button {
+  width: 200px;
+  height: 48px;
+  text-align: center;
+  color: #66bb6a;
+  background-color: #ffffff;
+}
+.same-size button:hover {
+  text-decoration: none;
+  background-color: #cae2c2;
+  color: #66bb6a;
+}
+
+.invest-post .bg-1 {
+  background-image: url(/project-img/invest-post-1.png);
+  background-repeat: no-repeat;
+}
+
+.invest-post .bg-2 {
+  background-image: url(/project-img/invest-post-2.png);
+  background-repeat: no-repeat;
+}
+.invest-post .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+/* Css block how it works */
+
+.how-it-works {
+  background-image: url(/project-img/how-it-works-bg.png);
+  background-repeat: no-repeat;
+  height: 720px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 300px;
+}
+
+.how-it-works h2 {
+  padding-top: 106px;
+  font-size: 2.25rem;
+  line-height: 4rem;
+  color: #ffffff;
+  padding-bottom: 14px;
+}
+
+.how-it-works .detail-hiw {
+  font-size: 1.12rem;
+  line-height: 2rem;
+  color: #e8f5e9;
+  text-align: center;
+  width: 70%;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.how-it-works .group-btn .small-group-btn {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 83px;
+  position: relative;
+  z-index: 10;
+}
+
+.how-it-works button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  outline: none;
+  background-color: #66bb6a;
+}
+
+.how-it-works button.active {
+  background-color: #ffffff;
+}
+
+.how-it-works .group-btn {
+  position: relative;
+}
+
+.how-it-works .white-line {
+  width: 55%;
+  background-color: #ffffff;
+  height: 3px;
+  margin: auto;
+  position: absolute;
+  top: 22px;
+  z-index: 1;
+  left: 22%;
+}
+
+.how-it-works .group-content {
+  width: 70%;
+  height: 100px;
+  margin: auto;
+}
+
+.group-content .content:not(:first-child) {
+  display: none;
+}
+
+.content .left-group-content {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #ffffff;
+}
+
+.content .right-group-content {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+
+/* Css block What other say about Zou  */
+
+.say-about-zou {
+  position: relative;
+  height: 630px;
+  margin-bottom: 150px;
+}
+
+.say-about-zou .container {
+  position: relative;
+}
+
+.say-about-zou h2 {
+  position: absolute;
+  top: 0px;
+  left: 72px;
+  font-size: 2.25rem;
+  line-height: 2.8rem;
+  color: #000000;
+  width: 40%;
+}
+.say-about-zou img.deco {
+  margin-bottom: 120px;
+  margin-left: 58px;
+}
+
+.splide__track {
+  position: relative;
+}
+
+.splide__slide {
+  width: 400px;
+  height: 250px;
+  background-color: #ffffff;
+  box-shadow: -1px 13px 20px #f0f2f4;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.splide__slide .top-small-slide {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.splide__slide.top-small-slide img {
+  padding-right: 10px;
+}
+
+.splide__slide .top-small-slide .detail-person {
+  padding-top: 22px;
+  padding-right: 20px;
+}
+
+.splide__slide .bottom-small-slide {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 80%;
+}
+
+.splide__arrows {
+  width: 160px;
+  position: absolute;
+  top: 320px;
+  left: 165px;
+}
+
+.btn-active {
+  width: 56px;
+  height: 56px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.25);
+}
+
+.splide__arrows button:hover {
+  background-color: #66bb6a;
+}
+
+.splide__arrow {
+  margin-bottom: 184px;
+}
+/* Css block future of Zou */
+
+.future-zou {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.future {
+  height: 300px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  border-radius: 5px;
+}
+
+.future .wrap {
+  text-align: center;
+}
+
+.future .wrap h2 {
+  font-size: 2.25rem;
+  line-height: 4rem;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.future .wrap button {
+  width: 269px;
+  height: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Css Footer */
+
+.footer-content {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.footer-content .top-content {
+  margin-bottom: 118px;
+}
+
+.footer-content .top-content h3 {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #000000;
+}
+
+.footer-content .top-content ul li a {
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #607d8b;
+}
+
+.footer-content .top-content ul li a:hover {
+  color: #66bb6a;
+}
+
+.top-content .col-lg-3:last-child .small-block {
+  background-color: #66bb6a;
+  border-radius: 10px;
+  padding: 30px 30px 0px 30px;
+}
+
+.small-block .small-content h3 {
+  color: #eff7e7;
+  font-size: 1.12rem;
+}
+
+.small-block .small-content p {
+  color: #edf6e5;
+  font-size: 1.12rem;
+  line-height: 1.5rem;
+  word-break: break-all;
+}
+
+.top-content .sign-in-link {
+  width: 100%;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-content .sign-in-link a {
+  color: #66bb6a;
+}
+
+.top-content .sign-in-link:hover {
+  background-color: #c5eab8;
+}
+
+.top-content .sign-in-link:hover a {
+  color: #607d8b;
+}
+.top-content .follow-social {
+  padding-bottom: 30px;
+}
+.top-content .follow-social a {
+  font-size: 18px;
+  padding-right: 5px;
+  color: #edf6e5;
+}
+
+.top-content .follow-social a:hover {
+  color: #607d8b;
+}
+
+/* Css footer-bottom-content */
+.footer-content .bottom-content {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content .bottom-content img {
+  width: 120px;
+  height: 38px;
+}
+
+.footer-content .bottom-content p {
+  padding-top: 10px;
+}
+
+@media (max-width: 991px) {
+  /* HEADER */
+
+  html {
+    font-size: 14px;
+  }
+
+  .navbar-nav {
+    padding-left: 0px;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #000000;
+  }
+
+  .sign-up-link {
+    margin-top: 0.625rem;
+    margin-left: 0px;
+    border: 1px solid black;
+  }
+
+  .sign-up-link a {
+    color: #000000;
+  }
+  header .intro {
+    margin-top: 7.125rem;
+    text-align: center;
+    max-width: 100%;
+    padding-right: 0px;
+  }
+  .intro h1,
+  .intro p {
+    color: #dcb7b7;
+  }
+
+  /* Css Section */
+
+  section {
+    top: 780px;
+    height: 3980px;
+  }
+  /* Css block opportunity */
+
+  section .opportunity {
+    padding: 0px;
+  }
+  section .opportunity .op-top-content {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 4rem;
+  }
+  .opportunity .small-box {
+    margin-bottom: 20px;
+  }
+
+  /* Css block invest */
+  .invest {
+    padding: 0;
+    padding-top: 70px;
+    text-align: center;
+  }
+  .invest .same-size {
+    margin-bottom: 30px;
+  }
+
+  .invest .white-line {
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  .same-size button {
+    margin: auto;
+    width: 120px;
+  }
+
+  /* Css block how it works */
+
+  .how-it-works {
+    margin-bottom: 100px;
+  }
+
+  /* Css block say about zou */
+
+  .say-about-zou {
+    margin-bottom: 75px;
+  }
+
+  /* Css block future */
+
+  .future-zou {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .future {
+    border: 1px solid black;
+    height: auto;
+    background-color: #d9fad77a;
+  }
+  .future h2 {
+    margin-top: 30px;
+  }
+  .future button {
+    margin-bottom: 30px;
+  }
+
+  .splide__arrows {
+    left: 72px;
+  }
+}
+@media (max-width: 767px) {
+  section {
+    background-image: none;
+    height: 5000px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+
+  .sign-up-link {
+    border: 1px solid #ffffff;
+  }
+
+  .sign-up-link a {
+    color: #ffffff;
+  }
+
+  .say-about-zou {
+    margin-bottom: 150px;
+  }
+
+  .say-about-zou img.deco {
+    margin-bottom: 240px;
+  }
+
+  .splide__arrows {
+    left: 160px;
+  }
+
+  .footer-content .bottom-content {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .footer-content .bottom-content img {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .invest .same-size {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .how-it-works {
+    height: 900px;
+  }
+  .splide__arrows {
+    left: 72px;
+  }
+  .how-it-works {
+    margin-bottom: 0;
+    padding-bottom: 30px;
+  }
+
+  .how-it-works h2 {
+    padding-top: 40px;
+  }
+  .how-it-works button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .how-it-works .white-line {
+    top: 15px;
+  }
+}
+
+@media (max-width: 416px) {
+  .say-about-zou img.deco {
+    margin-bottom: 300px;
+  }
+
+  .say-about-zou {
+    margin-bottom: 240px;
+  }
+
+  .future .wrap button {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .splide__arrows {
+    left: 0;
+  }
+  .footer-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .how-it-works {
+    max-height: 900px;
+    background-repeat: repeat;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1436px){
+  section{
+    background-image: none;
+  }
+  .future{
+    border: 1px solid #626262;
+  }
+  .splide__arrows{
+    left: 450px;
+  }
+}

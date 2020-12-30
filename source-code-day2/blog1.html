@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End to End Testing có ý nghĩa như thế nào trong DevOps CI/CD?</title>
+    <link rel="stylesheet" href="blog1.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>End to End Testing có ý nghĩa như thế nào trong DevOps CI/CD?</h1>
+        <p>18 tháng 09, 2020</p>
+        <div class="button-top">
+            <a href="https://techmaster.vn/posts?keyword=&category=66"><span>Kiểm thử</span></a>
+            <a href="https://techmaster.vn/posts?keyword=&category=555"><span>Tester</span></a>
+        </div>
+        <hr />
+        <p>
+            Một học viên lớp <a href="https://techmaster.vn/khoa-hoc/bw5/khoa-hoc-devops">DevOps</a> nhắn tin cho tôi
+            "Anh Cường, em không hiểu tại sao trong <a href="https://techmaster.vn/khoa-hoc/bw5/khoa-hoc-devops">khoá
+                học DevOps</a>, mà bọn em phải
+            lập trình kiểm thử là sao nhỉ. Em muốn được học về Kubernetes, AWS nhiều hơn". Rõ ràng là một câu hỏi rất
+            thực
+            dụng và đúng chất của một lập trình viên: rất thích công nghệ mới hot trend, và tránh công việc kiểm thử
+            càng
+            nhiều càng tốt.<br /><br />
+            Tuy nhiên kiểm thử tự động là một bước quan trọng trong cả quy trình CI/CD. Thử hình dùng mọi
+            bước trong quy trình CI/CD đều được tự động, chạy rất nhanh, nhưng khi đến bước kiểm thử, phải mất vài ngày
+            để
+            kiểm tra chất lượng sản phẩm, toàn bộ quy trình sẽ bị ách tắc tại đây. Do đó để CI/CD vận hành đúng, cần có
+            nhiều kịch bản kiểm thử tự động ở nhiều thành phần của sản phẩm để cải tiến chất lượng.
+        </p>
+        <img src="https://techmaster.vn/media/static/36/bti41nc51co41h2qcqg0"
+            alt="End to End Testing khác gì với Unit Testing" />
+        <i class="caption">End to End Testing khác gì với Unit Testing</i>
+        <p>Ngày hôm nay, vận hành của một web site phức tạp hơn rất nhiều trước đây. Giao diện web sẽ kết nối tới một
+            dịch
+            vụ REST. Dịch vụ này có thể gọi tiếp đến nhiều dịch vụ REST hoặc gRPC phía sau. Nếu chỉ kiểm thử từng dịch
+            vụ
+            REST thì chưa đủ, và không đảm bảo giao diện hoạt động theo đúng ý người dùng. Do đó End to End Testing sẽ
+            rất
+            hữu ích đảm bảo trải nghiệm sử dụng được chức năng ứng dụng thay vì quá mất nhiều thời gian để viết unit
+            test
+            từng dịch vụ REST API. Tối ưu nhất là chúng ta viết đầy đủ Unit Test và End to End Test. Nhưng nếu do nguồn
+            lực
+            có hạn, thì nên ưu tiên viết End to End Test trước.</p>
+        <h2>Tích hợp End to End Test vào CI/CD như thế nào?</h2>
+        <p> Khi bạn xây dựng một quy trình CI/CD, bạn cần nhúng End to End Test vào thành một bước trong kịch bản CI/CD.
+            Ví
+            dụ: sau khi deploy xong, cần tiến hành End to End Testing sau đó xuất ra báo cáo kết quả. Gửi kết quả vào
+            email
+            đội lập trình chả hạn.<br /> <br />
+            Về bản chất đấy chỉ là việc thực thi câu lệnh chạy CodeCept.io trong bash shell.<br /> <br />
+            Dưới đây là link tham khảo mẫu code tích hợp CodeCept với GitLab CI, Jenkins, TeamCity<br />
+            <a href="https://codecept.io/continuous-integration/">https://codecept.io/continuous-integration/</a></p>
+    </div>
+</body>
+
+</html>

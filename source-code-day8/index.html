@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Username" id="username" name="username" required>
+        <br />
+        <br />
+        <label for="password">Mat khau:</label>
+        <input type="password" placeholder="Password" id="password" name="password" required>
+        <br />
+        <br />
+        <label for="">Gioi tinh:</label>
+        <input id="male" type="radio" name="gender" value="male"><label for="male">Nam</label>
+        <input id="female" type="radio" name="gender"value="female"><label for="female">Nu</label>
+        <br />
+        <br />
+        <label for="">So thich</label>
+        <input id="swim" type="checkbox" name="favorite" value="swim" checked><label for="swim">Boi loi</label>
+        <input id="football" type="checkbox" name="favorite" value="football"><label for="football">Bong da</label>
+        <input id="listen-music" type="checkbox" name="favorite" value="listen-music"><label for="listen-music">Nghe
+            nhac</label>
+        <br />
+        <br />
+        <!-- De submit du lieu co the dung input type="submit" hoac button type="submit" -->
+        <button type="submit">Dang nhap</button>
+        <button type="reset">Reset</button>
+
+        <br />
+        <br />
+
+        <select name="countries "id="countries">
+            <Option value="Hanoi">Hanoi</Option>
+            <option value="Danang">Danang</option>
+            <option value="TP HCM">TP HCM</option>
+        </select>
+        
+        
+    </form>
+</body>
+
+</html>

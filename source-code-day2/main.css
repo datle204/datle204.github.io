@@ -1,0 +1,30 @@
+h2 {
+    color: white;
+    background-color: black;
+}
+
+#monday, #tuesday {
+    color: burlywood;
+}
+
+.mau-nen{
+    background-color: greenyellow;
+}
+
+.decoration{
+    text-align: center;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: antiquewhite;
+    /* width: 200px;
+    display: block; */
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 10px;
+
+}
+

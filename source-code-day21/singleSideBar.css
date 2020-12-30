@@ -1,0 +1,140 @@
+
+.description, .detail, .detail-img{
+    padding-right: 40px;
+}
+
+.sidebar{
+    padding-top: 84px;
+}
+
+/* Css block about me */
+.about-me-post{
+    margin-bottom: 62px;
+}
+
+.about-me-post img{
+    padding-bottom: 30px;
+}
+
+.about-me-post h2{
+    font-family: 'playfair_display';
+    font-size: 24px;
+    color: #626262;
+    padding-bottom: 20px;
+}
+
+.about-me-post .des{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.about-me-post .follow-social{
+    justify-content: flex-start;
+    padding-top: 0;
+}
+
+.about-me-post .follow-social a{
+    padding-left: 0;
+    padding-right: 16px;
+    font-size: 18px;
+}
+
+/* Css block top-post */
+
+.top-post ul{
+    padding-left: 20px;
+    color: #b4ad9e;
+}
+
+.top-post .post-title{
+    font-family: 'playfair_display';
+    font-size: 16px;
+    color: #626262;
+    padding-bottom: 10px;
+}
+
+.top-post .cmt-count{
+    font-family: 'ubuntu';
+    font-size: 12px;
+    font-weight: lighter;
+    color: #b4ad9e;
+}
+
+/* Css banner spot */
+
+.banner-spot{
+    width: 100%;
+    height: 250px;
+    background-image: url(/images/banner-spot-img.jpg);
+}
+
+.banner-spot .banner-spot-block{
+    background-color: #b4ad9e;
+    height: 100%;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-spot .banner-content{
+    text-align: center;
+}
+.banner-content .banner-spot-size{
+    font-family: 'ubuntu';
+    font-size: 48px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+.banner-content .name-banner-spot{
+    font-family: 'ubuntu';
+    font-size: 14px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .sidebar{
+        padding-top: 0;
+    }
+
+    .description, .detail, .detail-img{
+        padding-right: 84px;
+    }
+
+    .sidebar .about-me-post{
+        padding-left: 84px;
+        padding-right: 84px;
+        text-align: center;
+    }
+
+    .about-me-post .follow-social{
+        justify-content: center;
+    }
+
+    .sidebar .top-post{
+        padding-left: 84px;
+        padding-right: 84px;
+        text-align: center;
+    }   
+    .top-post ul{
+        list-style-type: none;
+        padding-left: 0px;
+    }
+
+    .banner-spot{
+        display: none;
+    }
+
+}
+
+@media(max-width: 576px){
+    .description, .detail, .detail-img{
+        padding-right: 20px;
+    }
+    .sidebar .about-me-post, .sidebar .top-post{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

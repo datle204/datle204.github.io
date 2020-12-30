@@ -1,0 +1,282 @@
+/* Import font */
+@font-face {
+  src: url(/FONTS/Inconsolata/static/Inconsolata-Regular.ttf);
+  font-family: "inconsolata";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(/FONTS/Playfair_Display/PlayfairDisplay-Regular.ttf);
+  font-family: "playfair_display";
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url(/FONTS/Ubuntu/Ubuntu-Regular.ttf);
+  font-family: "ubuntu";
+  font-weight: normal;
+  font-style: normal;
+}
+/* default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h2,
+h3 {
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Css navbar */
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 50px;
+}
+.navbar-brand {
+  font-family: "inconsolata";
+  font-size: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.navbar-nav {
+  font-family: "playfair_display";
+  font-size: 14px;
+  color: #626262;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  padding: 10px 60px 10px 0px;
+}
+
+.nav-item:last-child {
+  padding-right: 0;
+}
+
+/* Css khoi mo ta */
+.description {
+  padding: 84px;
+  margin-bottom: 51px;
+}
+h3 {
+  font-family: "ubuntu";
+  font-size: 14px;
+  font-weight: lighter;
+  color: #b4ad9e;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "playfair_display";
+  font-size: 30px;
+  color: #626262;
+  padding-bottom: 35px;
+}
+
+.des {
+  font-family: "playfair_display";
+  font-size: 14px;
+  color: #626262;
+  padding-bottom: 52px;
+}
+
+.tag {
+  font-family: "ubuntu";
+  font-size: 14px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+}
+
+/* Css block post */
+
+.posts {
+  padding-left: 84px;
+  padding-right: 84px;
+}
+
+.posts .small-post {
+  height: 545px;
+  margin-bottom: 65px;
+}
+.small-post p.tag {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Newletter */
+
+.container-fluid {
+  background-color: #f0f0f0;
+  height: 287px;
+  margin-bottom: 105px;
+}
+
+.subscribe h2 {
+  text-align: center;
+  color: #333333;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.subscribe .submit {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #626262;
+}
+
+.submit input {
+  border: none;
+  background-color: #f0f0f0;
+  width: 50%;
+  padding-bottom: 5px;
+}
+.submit button.submit-email {
+  border: none;
+  color: #626262;
+  background-color: #f0f0f0;
+}
+
+button.load-button {
+  font-family: "playfair_display";
+  margin: 100px auto 165px auto;
+  color: #626262;
+  font-size: 20px;
+  width: 165px;
+  height: 60px;
+  display: block;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: #ffffff;
+}
+
+.submit input:focus {
+  outline: none;
+}
+
+button.load-button:hover {
+  color: black;
+  background-color: #f0f0f0;
+}
+button.submit-email:hover {
+  color:black;
+}
+button.submit-email:hover,
+button.load-button:focus {
+  outline: none;
+}
+
+/* Css footer */
+
+footer.container-fluid {
+  height: 100px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+footer.container-fluid .footer-info {
+  padding-right: 84px;
+  padding-left: 84px;
+}
+
+.footer-follow-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-info a {
+  padding-right: 18px;
+  color: #000000;
+  padding-bottom: 0px;
+}
+
+.footer-info a:last-child {
+  padding-right: 0;
+}
+
+.footer-info a:hover {
+  color: #626262;
+}
+
+@media (min-width: 576px) {
+  .subscribe {
+    width: 80%;
+    margin: auto;
+  }
+  .subscribe .submit {
+    width: 100%;
+  }
+  .submit input{
+    width: 65%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1062px;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 12px 0px;
+  }
+  .subscribe {
+    width: 50%;
+  }
+  .subscribe .submit {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .subscribe {
+    width: 40%;
+  }
+  .subscribe .submit {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    width: 30%;
+  }
+  .subscribe .submit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .posts .small-post {
+    margin-bottom: 30px;
+    height: auto;
+  }
+
+  button.load-button {
+    margin-top: 30px;
+  }
+  .small-footer-info {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-follow-group {
+    margin-top: 15px;
+    justify-content: center;
+  }
+}
