@@ -10,7 +10,7 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="homework.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -48,7 +48,7 @@
 
     <script>
       document.getElementById("back-button").onclick = function () {
-        location.href = "studentList.html";
+        location.href = "index.html";
       };
       $('#save-button').click(function () {
         $.ajax({
@@ -61,7 +61,7 @@
             phone: $("#phone").val(),
           },
         });
-        location.href = "studentList.html";
+        location.href = "index.html";
       });
 
     </script>

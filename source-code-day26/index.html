@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code mau sac</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách học viên</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <p>Popular colors</p>
-        <div class="row">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+      <h1 class="title">Danh sách học viên</h1>
+      <button id="add-student">
+        <i class="fas fa-plus-circle"> Thêm học viên</i>
+      </button>
+      <table>
+        <thead>
+          <tr>
+            <th>Họ tên</th>
+            <th>Năm sinh</th>
+            <th>Email</th>
+            <th>Số điện thoại</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody id="content"></tbody>
+      </table>
+      <div class="edit-box">
+        <form action="#" id="form">
+          <h1 class="create-list-title">Chỉnh sửa thông tin</h1>
+          <div class="row">
+            <label for="name">Họ tên <span> *</span> </label>
+            <input type="text" id="name"/>
+          </div>
+          <div class="row">
+            <label for="yearOfBirth">Năm sinh</label>
+            <input type="text" id="yearOfBirth" />
+          </div>
+          <div class="row">
+            <label for="email">Email <span> *</span></label>
+            <input type="text" id="email" />
+          </div>
+          <div class="row">
+            <label for="phone">Phone <span> *</span></label>
+            <input type="tel" id="phone" />
+          </div>
+        </form>
+        <div class="button-box">
+          <button id="back-button">
+            <i class="fas fa-chevron-left"> Back</i>
+          </button>
+          <button id="edit-button"><i class="fas fa-save"> Lưu mới</i></button>
         </div>
-        <div class="row">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </div>
-        <button id="button">Clear All</button>
+      </div>
     </div>
-    <script src="/js/jquery-3.5.1.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("add-student").onclick = function () {
+        location.href = "createList.html";
+      };
+    </script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
