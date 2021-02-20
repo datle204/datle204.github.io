@@ -35,6 +35,7 @@ function addEventDeleteStudent() {
   let deleteArrayButton = $(".delete");
   for (let i = 0; i < deleteArrayButton.length; i++) {
     $(deleteArrayButton[i]).click(function () {
+      
       $.ajax({
         method: "DELETE",
         url:
