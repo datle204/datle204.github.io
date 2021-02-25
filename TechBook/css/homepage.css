@@ -1,0 +1,297 @@
+/* RESPONSIVE FOR MOBILE FIRST */
+
+/* FEATURED BOOK  */
+
+.main-title {
+  margin-top: 80px;
+}
+
+h1.title {
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.small-red-line {
+  width: 80px;
+  background-color: #ec5151;
+  height: 2px;
+  margin: auto;
+}
+
+.books-showcase {
+  margin-top: 120px;
+}
+
+.black-line {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+
+.card-item {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid grey;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+.card-item .card-img {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.books-showcase .card-item a.card-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+p.price {
+  font-size: 20px;
+  line-height: 28px;
+  color: #f15757;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fd756d;
+  opacity: 0.9;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* BEST SELLER BOOK */
+.big-box {
+  padding: 20px;
+}
+.best-seller-book {
+  margin-top: 80px;
+  padding: 40px;
+  background-color: #f6f3f3;
+  text-align: center;
+}
+/* Set up for desktop */
+.best-book-second-box {
+  display: none;
+}
+/* Set up for mobile */
+.best-book-first-box {
+  margin-top: 40px;
+  display: block;
+}
+
+.best-book-top-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #e56464;
+}
+
+.best-book-name {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.best-book-author {
+  font-weight: 400;
+  font-size: 18px;
+  color: #515151;
+  padding-bottom: 20px;
+}
+
+.best-book-price {
+  font-size: 32px;
+  color: #fd756d;
+}
+
+.best-book-description {
+  font-weight: 400;
+  font-size: 14px;
+  color: #515151;
+  margin-bottom: 30px;
+}
+
+.main-add-to-card {
+  padding: 10px 30px;
+  background-color: #fd837c;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.best-book-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* COMMENT - CAROUSEL */
+
+.comment-box {
+  margin-top: 60px;
+  background-image: url(/TechBook/img/banner2-1.jpg);
+  height: 400px;
+}
+
+.small-cmt-box {
+  width: 260px;
+  border-radius: 20px;
+  height: 300px;
+  background-color: white;
+  color: black;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.small-cmt-box .left-cmt-content {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.small-cmt-box img.user-avatar {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* NEW EVENT */
+
+.event-showcase {
+  margin-top: 60px;
+}
+
+.event-box {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.event-img {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.event-box-title {
+  color: #000000;
+  padding-top: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* BOTTOM-BANNER */
+
+.bottom-banner {
+  background-image: url(/TechBook/img/banner2-1.jpg);
+  height: 400px;
+  overflow: hidden;
+}
+.bottom-banner-box {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.bottom-banner-box .main-title {
+  margin-top: 100px;
+}
+
+.bottom-banner-box .bottom-banner-title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #252627;
+}
+
+.buy-btn {
+  padding: 10px 30px;
+  background-color: #fd837c;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE FOR IPAD (>=768px) */
+
+@media (min-width: 768px) {
+  /* BEST SELLER BOOK */
+  .best-book-img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* BEST SELLER BOOK */
+
+  .best-seller-book {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .content-left {
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .content-right {
+    width: 40%;
+    text-align: center;
+  }
+  .best-book-second-box {
+    display: block;
+  }
+
+  .best-book-first-box {
+    display: none;
+  }
+
+  /* COMMENT - CAROUSEL */
+
+  .small-cmt-box {
+    width: 300px;
+    border-radius: 20px;
+  }
+
+  /* NEW EVENT */
+  .event-box-title {
+    font-size: 16px;
+  }
+}
