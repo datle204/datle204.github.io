@@ -224,7 +224,11 @@ footer {
   padding-bottom: 10px;
   padding-right: 20px;
 }
-
+.footer-box ul li p{
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
 .top-footer .footer-box ul li i {
   padding-right: 10px;
 }
