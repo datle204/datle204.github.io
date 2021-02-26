@@ -326,3 +326,13 @@ footer {
     text-align: left;
   }
 }
+
+@media(max-width: 400px){
+  .banner-box{
+    width: 80%;
+  }
+  .banner-box-main-title{
+    font-size: 26px;
+  }
+
+}
