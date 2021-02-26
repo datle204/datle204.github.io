@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="lib/bootstrap.min.css" />
     <link rel="shortcut icon" href="/TechBook/img/TB.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/categories.css"/>
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/categories.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -94,9 +95,9 @@
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">P. Tran</a>
-                    <a class="dropdown-item" href="#">Anonymous</a>
-                    <a class="dropdown-item" href="#">Mastery</a>
+                    <a class="dropdown-item" href="categories.html">P. Tran</a>
+                    <a class="dropdown-item" href="categories.html">Anonymous</a>
+                    <a class="dropdown-item" href="categories.html">Mastery</a>
                   </div>
                 </li>
                 <li class="nav-item">
@@ -149,18 +150,224 @@
     </header>
     <!-- MAIN -->
     <main>
-        <!-- BANNER -->
+      <!-- BANNER -->
       <div class="banner">
         <div class="container">
-          <div class="banner-box" id="disable">
-            <p class="banner-box-top-title">Bộ sưu tập sách hay 2021</p>
-            <h1 class="banner-box-main-title">
-              Giảm giá 40% các sách của <span>Techmaster</span>
-            </h1>
-            <button type="submit" class="buy-btn">Đặt Mua</button>
-          </div>
+          <div class="banner-box" id="disable"></div>
         </div>
       </div>
+      <!-- FILTER COLUMN -->
+      <div class="container">
+        <div class="filter-box">
+          <!-- FILTER BOX TOP CONTENT -->
+          <div class="top-content">
+              
+            <div class="left-content">
+                <div id="search-form">
+                    <form>
+                    <input type="text" placeholder="Search..." />
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    </form>
+                </div>
+
+            </div>
+                
+            <div class="right-content">
+                <a href="#">Bộ Lọc <i class="fas fa-filter"></i></a>
+            </div>
+            
+              
+          </div>
+          <!-- Separate two parts -->
+          <div class="black-line"></div>
+          <!-- FILTER BOX BOTTOM CONTENT -->
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="filter">
+                  <!-- CUSTOM FILTER--> 
+                  <div class="filter-categories">
+                      <div class="filter-title">
+                          <p class="filter-main-title">Danh MỤC SÁCH</p>
+                          <div class="bottom-black-line">
+                            <div class="bottom-red-line"></div>
+                          </div>
+                      </div>
+                      <ul>
+                          <li><a href="#">Lập trình Website</a></li>
+                          <li><a href="#">Big Data</a></li>
+                          <li><a href="#">React JS</a></li>
+                          <li><a href="#">Backend</a></li>
+                          <li><a href="#">C++</a></li>
+                          <li><a href="#">Python</a></li>
+                      </ul>
+                  </div>
+                  <div class="filter-price">
+                    <div class="filter-title">
+                        <p class="filter-main-title">Giá tiền</p>
+                        <div class="bottom-black-line">
+                            <div class="bottom-red-line"></div>
+                        </div>
+                    </div>
+                      <ul>
+                          <li>
+                            <input type="checkbox" id="price-1" name="price-1" value="price-1"><label for="price-1">0₫ - 150,000₫</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="price-2" name="price-1" value="price-1"><label for="price-2">150,000₫ - 300,000₫</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="price-3" name="price-1" value="price-1"><label for="price-3">300,000₫ - 500,000₫</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="price-4" name="price-1" value="price-1"><label for="price-4">500,000₫ - 700,000₫</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id="price-5" name="price-1" value="price-1"><label for="price-5">700,000₫ - trở lên</label>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="filter-author">
+                    <div class="filter-title">
+                        <p class="filter-main-title">Tác Giả</p>
+                        <div class="bottom-black-line">
+                            <div class="bottom-red-line"></div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                          <input type="checkbox" id="author-1" name="author-1" value="Alexander"><label for="author-1">Alexander</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="author-2" name="author-2" value="Tony Stark"><label for="author-2">Tony Stark</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="author-3" name="author-3" value="Hawk Phillip"><label for="author-3">Hawk Phillip</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="author-4" name="author-4" value="Maximilian"><label for="author-4">Maximilian</label>
+                        </li>
+                        <li>
+                          <input type="checkbox" id="author-5" name="author-5" value="Westley"><label for="author-5">Westley</label>
+                        </li>
+                    </ul>
+                  </div>
+                  <div class="small-banner">
+
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="books-showcase">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                      <img
+                        src="/TechBook/img/hacker.jpg"
+                        alt=""
+                        class="card-img"
+                      />
+                      <a href="#" class="card-title">Hacker Lược Sử</a>
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                      <img
+                        src="/TechBook/img/gian-diep.jpg"
+                        alt=""
+                        class="card-img"
+                      />
+                      <a href="#" class="card-title">Gián Điệp Mạng</a>
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                      <img
+                        src="/TechBook/img/du-lieu-lon.jpg"
+                        alt=""
+                        class="card-img"
+                      />
+                      <a href="#" class="card-title">Dữ Liệu Lớn</a>
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                      <img
+                        src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
+                        alt=""
+                        class="card-img"
+                      />
+                      <a href="#" class="card-title"
+                        >Phân Tích Dữ Liệu Tinh Gọn</a
+                      >
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                      <img
+                        src="/TechBook/img/cuoc-cach-mang-blockchain-outline-01.jpg"
+                        alt=""
+                        class="card-img"
+                      />
+                      <a href="#" class="card-title"
+                        >Cuộc Cách Mạng Blockchain</a
+                      >
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                      <img
+                        src="/TechBook/img/platform-ung-dung.jpg"
+                        alt=""
+                        class="card-img"
+                      />
+                      <a href="#" class="card-title">Ứng dụng</a>
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+               <div class="pages">
+                   <div class="pages-box">
+                       <button type="submit" class="btn-active"><a href="#">1</a></button>
+                       <button type="submit"><a href="#">2</a></button>
+                       <button type="submit"><a href="#">3</a></button>
+                   </div>
+               </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Separate two parts -->
+        <div class="black-line"></div>
+      </div>
+
     </main>
     <!-- FOOTER -->
     <footer>

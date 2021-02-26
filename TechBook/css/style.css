@@ -200,7 +200,7 @@ footer {
   font-weight: 500;
 }
 
-.footer-box .main-top-title .bottom-black-line {
+.bottom-black-line {
   width: 200px;
   background-color: rgb(0 0 0 / 10%);
   height: 2px;
@@ -208,7 +208,7 @@ footer {
   position: relative;
 }
 
-.footer-box .main-top-title .bottom-red-line {
+.bottom-red-line {
   width: 50px;
   background-color: red;
   height: 2px;

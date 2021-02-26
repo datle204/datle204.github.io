@@ -1,0 +1,155 @@
+/* RESPONSIVE FOR MOBILE FIRST */
+
+/* BANNER */
+
+.banner{
+    height: 400px;
+}
+
+/* FILTER BOX */
+
+/* TOP CONTENT */
+
+.filter-box .top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-box .top-content .right-content a{
+    color: #515151;
+    font-size: 14px;
+}
+
+.filter-box .top-content .right-content a:hover{
+    text-decoration: none;
+    color: #e56464;
+}
+
+#search-form input{
+    padding: 5px;
+}
+
+#search-form button{
+    padding: 5px 8px;
+}
+
+#search-form button {
+    background-color: #fd756d;
+    color: white;
+}
+
+/* SEPARATE TWO PARTS */
+.black-line{
+    width: 100%;
+    margin-top: 20px;
+    color: grey;
+}
+
+
+/* BOTTOM CONTENT */
+
+.filter-main-title{
+    margin-bottom: 10px;
+    margin-top: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.filter-categories ul li{
+    padding-bottom: 10px;
+}
+
+.filter-categories ul li a{
+    color: #515151;
+    font-size: 20px;
+}
+
+.filter-categories ul li a:hover{
+    text-decoration: none;
+    color: #e56464;
+}
+
+.bottom-black-line {
+    width: 200px;
+    background-color: rgb(0 0 0 / 10%);
+    height: 2px;
+    margin-bottom: 20px;
+    position: relative;
+}
+  
+.bottom-red-line {
+width: 50px;
+background-color: red;
+height: 2px;
+position: absolute;
+top: 0;
+}
+
+
+ul li input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+ul li label{
+    font-size: 18px;
+    color: #515151;
+    cursor: pointer;
+}
+
+.small-banner{
+    background-image: url(/TechBook/img/sale-off.jpg);
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card-item{
+    width: 100%;
+}
+
+.pages-box{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.pages-box button{
+    padding: 10px 15px;
+    background-color: white;
+    margin: 5px;
+    border: none;
+    
+}
+
+
+.pages-box button a{
+    color: #515151
+}
+
+.pages-box button a:hover{
+    color: #e56464;
+    text-decoration: none;
+}
+
+.pages-box .btn-active{
+    background-color: #e56464;
+    border-radius: 5px;
+}
+
+.pages-box .btn-active a{
+    color: white;
+}
+.pages-box .btn-active a:hover{
+    color: black;
+    text-decoration: none;
+}
+footer{
+    margin-top: 80px;
+}
