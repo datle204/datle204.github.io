@@ -6,6 +6,22 @@
     height: 400px;
 }
 
+.banner-box {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.banner-cate-main-title{
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
 /* FILTER BOX */
 
 /* TOP CONTENT */
@@ -45,7 +61,6 @@
     margin-top: 20px;
     color: grey;
 }
-
 
 /* BOTTOM CONTENT */
 
