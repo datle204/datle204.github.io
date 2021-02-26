@@ -49,11 +49,14 @@ h1.title {
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.4);
 }
 
+
 .books-showcase .card-item a.card-title {
+  display: inline-block;
+  height: 56px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-
+  margin-bottom: 0px;
   color: #000000;
 }
 
@@ -76,6 +79,7 @@ p.price {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /* BEST SELLER BOOK */
