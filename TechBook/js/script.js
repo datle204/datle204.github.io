@@ -25,3 +25,7 @@ document.getElementById("click-btn").onclick = function () {
   let check = document.getElementById("disable");
   check.classList.toggle("visibility");
 };
+
+
+// EVENT CLICK SHOW FILTER ON MOBILE AND TABLET
+
