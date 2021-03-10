@@ -60,18 +60,24 @@
     border: none;
     background-color: white;
     outline: none;
+    margin-right: 20px;
 }
 
+#sort-button{
+    border: none;
+    background-color: white;
+    outline: none;
+}
 
-#search-form input{
+.left-content .search-form input{
     padding: 5px;
 }
 
-#search-form button{
+.left-content .search-form button{
     padding: 5px 8px;
 }
 
-#search-form button {
+.left-content .search-form button {
     background-color: #fd756d;
     color: white;
 }
@@ -126,12 +132,12 @@ top: 0;
 }
 
 
-ul li input{
+.filter ul li input{
     margin-right: 10px;
     cursor: pointer;
 }
 
-ul li label{
+.filter ul li label{
     font-size: 18px;
     color: #515151;
     cursor: pointer;

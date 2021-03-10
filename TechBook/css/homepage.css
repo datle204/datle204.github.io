@@ -35,15 +35,18 @@ h1.title {
   width: 90%;
   margin: auto;
   padding: 20px;
-  border: 1px solid grey;
   text-align: center;
   border-radius: 10px;
   margin-bottom: 80px;
 }
 
+.card-item:hover{
+  border: 1px solid grey;
+}
+
 .card-item .card-img {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.4);
@@ -85,12 +88,14 @@ p.price {
 /* BEST SELLER BOOK */
 .big-box {
   padding: 20px;
+  
 }
 .best-seller-book {
   margin-top: 80px;
   padding: 40px;
   background-color: #f6f3f3;
   text-align: center;
+  border-radius: 10px;
 }
 /* Set up for desktop */
 .best-book-second-box {
@@ -152,6 +157,7 @@ p.price {
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.4);
 }
 
 /* COMMENT - CAROUSEL */
@@ -297,5 +303,12 @@ p.price {
   /* NEW EVENT */
   .event-box-title {
     font-size: 16px;
+  }
+}
+
+
+@media (min-width: 1800px){
+  .small-cmt-box {
+    width: 450px;
   }
 }
