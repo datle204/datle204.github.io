@@ -28,8 +28,9 @@ h1.title {
 .black-line {
   width: 100%;
   height: 1px;
-  background-color: grey;
+  background-color: #dddddd;
 }
+
 
 .card-item {
   width: 90%;

@@ -1,0 +1,194 @@
+/* CSS FOR DESKTOP FIRST */
+
+.main-cart{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.main-cart .over-flow{
+    border: 1px solid #dddddd;
+    width: 70%;
+}
+/* LEFT CART */
+.main-cart .left-cart{
+    width: 100%;
+}
+
+.main-cart .left-cart table{
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+th{
+    background-color: #dedede4d;
+    color: black;
+    text-transform: uppercase;
+}
+
+td, th{
+   
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+}
+
+.item a {
+    color: grey;
+    padding-right: 10px;
+}
+td img{
+    width: 60%;
+    border: 1px solid grey;
+}
+
+.left-cart .black-line{
+    background-color:  #dddddd;
+}
+
+.coupon{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.coupon-title{
+    padding-right: 20px;
+    margin-bottom: 0;
+}
+
+.coupon input{
+    margin-right: 20px;
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.coupon button{
+    padding: 5px 15px;
+    border: none;
+    background-color: #f15757;
+    color: white;
+    border-radius: 10px;
+
+}
+
+/* RIGHT CART */
+.main-cart .right-cart{
+    width: 25%;
+    border: 1px solid #dddddd;
+    height: 80%;
+}
+
+
+
+.right-cart h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    background-color: #dedede4d;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.right-cart .no-vat-price{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0;
+
+}
+
+.right-cart .black-line{
+    background-color: #dddddd;
+}
+
+.right-cart .vat-price{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.right-cart button{
+    padding: 10px 15px;
+    border: none;
+    background-color: #f15757;
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+button.btn-cart-mobile{
+    display: none;
+}
+
+
+/* BLACK LINE */
+
+.black-line-cart{
+    width: 100%;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+
+@media(max-width: 991px){
+    .main-cart{
+        display: block;
+    }
+
+    .main-cart .over-flow{
+        width: 100%;
+    }
+    
+    .main-cart .left-cart{
+        width: 100%;
+    }
+
+    .left-cart table{
+        width: 100%;
+    }
+    .main-cart .right-cart{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .main-cart .right-cart button{
+        display: none;
+    }
+
+    button.btn-cart-mobile{
+        padding: 10px 15px;
+        border: none;
+        background-color: #f15757;
+        color: white;
+        width: 200px;
+        outline: none;
+        margin-top: 20px;
+        display: block;
+    }
+    td, th{
+        width: 20%;
+    }
+
+    .coupon{
+        display: block;
+    }
+    .coupon-title{
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 800px){
+    .over-flow{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    .main-cart .left-cart{
+        min-width: 700px;
+    }
+}

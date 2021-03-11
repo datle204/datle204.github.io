@@ -43,6 +43,7 @@
         <link rel="stylesheet" href="css/categories.css" />
         <link rel="stylesheet" href="css/product.css" />
         <link rel="stylesheet" href="css/cart.css" />
+        <link rel="stylesheet" href="css/payment.css" />
       </head>
       <body>
         <!-- HEADER -->
@@ -178,72 +179,102 @@
           <div class="banner">
             <div class="container">
               <div class="banner-box" id="disable">
-                <h1 class="banner-cate-main-title">GIỎ HÀNG</h1>
+                <h1 class="banner-cate-main-title">THANH TOÁN</h1>
               </div>
             </div>
           </div>
           <!-- PRODUCT DETAILS -->
           <div class="container">
-            <div class="main-cart-mobile"></div>
-            <div class="main-cart">
-              <div class="over-flow">
-                  <!-- LEFT CART -->
-                <div class="left-cart">
-                  <table>
-                    <tr>
-                      <th></th>
-                      <th>Sản Phẩm</th>
-                      <th>Giá Tiền</th>
-                      <th>Số Lượng</th>
-                      <th>Tổng Tiền</th>
-                    </tr>
-                    <tr>
-                      <td class="item">
-                        <a href="#"><i class="fas fa-times-circle"></i></a>
-                        <img
-                          src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
-                          alt=""
-                        />
-                      </td>
-                      <td>Phân Tích Dữ Liệu Tinh Gọn</td>
-                      <td>₫250,000</td>
-                      <td>1</td>
-                      <td>₫250,000</td>
-                    </tr>
-                  </table>
-                  <div class="black-line"></div>
-                  <div class="coupon">
-                    <p class="coupon-title">Mã Giảm Giá</p>
-                    <form action="#">
-                      <input type="text" />
-                      <button type="submit">Sử Dụng Mã</button>
-                    </form>
+            <div class="ask-question">
+              <p class="sign-up-question">Bạn đã là thành viên?</p>
+              <a href="#" class="sign-up">Đăng nhập ngay.</a>
+            </div>
+            <div class="form">
+              <div class="top-payment-content">
+                <h2>ĐỊA CHỈ GIAO HÀNG</h2>
+                <div class="black-line"></div>
+                <form action="#" class="info-payment">
+                  <div class="row">
+                    <label for="name">Họ và tên người nhận</label>
+                    <input
+                      type="text"
+                      placeholder="Nhập họ và tên người nhận"
+                      id="name"
+                      required
+                    />
                   </div>
-                </div>
-              </div>
-              <!-- RIGHT CART -->
-              <div class="right-cart">
-                <form action="payment.html">
-                  <h2>Giỏ Hàng</h2>
-                  <div class="no-vat-price">
-                    <p>Thành tiền</p>
-                    <p>₫250,000</p>
+                  <div class="row">
+                    <label for="email">Email</label>
+                    <input
+                      type="text"
+                      placeholder="Nhập email"
+                      id="email"
+                      required
+                    />
                   </div>
-                  <div class="black-line"></div>
-                  <div class="vat-price">
-                    <p>Tổng số tiền (Gồm VAT)</p>
-                    <p>₫250,000</p>
+                  <div class="row">
+                    <label for="phone">Số điện thoại</label>
+                    <input
+                      type="text"
+                      placeholder="Nhập số điện thoại"
+                      id="phone"
+                      required
+                    />
                   </div>
-                  <button type="submit" class="desktop">THANH TOÁN</button>
+                  <div class="row">
+                    <label for="city">Tỉnh/Thành Phố</label>
+                    <select id="city" required>
+                      <option value="default"></option>
+                      <option value="Hà Nội">Hà Nội</option>
+                      <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    <label for="district">Quận/Huyện</label>
+                    <select id="district" required>
+                      <option value="default"></option>
+                      <option value="Hoàn Kiếm">Hoàn Kiếm</option>
+                      <option value="Hà Đông">Hà Đông</option>
+                      <option value="Quận 1">Quận 1</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    <label for="address">Địa chỉ nhận hàng</label>
+                    <input
+                      type="text"
+                      placeholder="Nhập địa chỉ nhận hàng"
+                      id="address"
+                      required
+                    />
+                  </div>
                 </form>
               </div>
-              <form action="payment.html">
-                <button type="submit" class="btn-cart-mobile">
-                  THANH TOÁN
-                </button>
-              </form>
+              <div class="bottom-payment-content">
+                <h2>PHƯƠNG THỨC THANH TOÁN</h2>
+                <div class="black-line"></div>
+                <form action="" class="info-payment-card">
+                  <input
+                    type="radio"
+                    id="bank-transfer"
+                    value="bank"
+                    name="card"
+                  />
+                  <label for="bank-transfer">Chuyển khoản ngân hàng</label
+                  ><br />
+                  <input
+                    type="radio"
+                    id="cod"
+                    value="cod"
+                    name="card"
+                    checked
+                  />
+                  <label for="cod">Thanh toán bằng tiền mặt khi nhận hàng</label
+                  ><br />
+                </form>
+              </div>
+              <button class="payment" type="submit">Thanh Toán</button>
             </div>
-            <div class="black-line-cart"></div>
+            <div class="black-line"></div>
           </div>
         </main>
 
