@@ -1,81 +1,81 @@
-.row{
-    margin-left: 0;
-    margin-right: 0;
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
-.ask-question{
-    display: flex;
-    margin-top: 40px;
+.ask-question {
+  display: flex;
+  margin-top: 40px;
 }
-.sign-up-question{
-   padding-right: 10px;
+.sign-up-question {
+  padding-right: 10px;
 }
 
-a.sign-up{
-    color: #f15757;
+a.sign-up {
+  color: #f15757;
 }
 
 /* TOP PAYMENT CONTENT */
-.top-payment-content{
-    margin-top: 40px;
+.top-payment-content {
+  margin-top: 40px;
 }
-.top-payment-content h2{
-    font-size: 24px;
+.top-payment-content h2 {
+  font-size: 24px;
 }
-.info-payment{
-    margin-top: 40px;
-}
-
-.info-payment .row{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+.info-payment {
+  margin-top: 40px;
 }
 
-.info-payment .row label{
-    width: 20%;
-    padding-top: 10px;
+.info-payment .row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.info-payment .row input{
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #dddddd;
+.info-payment .row label {
+  width: 20%;
+  padding-top: 10px;
 }
 
-.info-payment .row select{
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #dddddd;
+.info-payment .row input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+}
+
+.info-payment .row select {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #dddddd;
 }
 
 /* BOTTOM PAYMENT CONTENT */
 
-.bottom-payment-content{
-    margin-top: 40px;
+.bottom-payment-content {
+  margin-top: 40px;
 }
 
-.bottom-payment-content h2{
-    font-size: 24px;
+.bottom-payment-content h2 {
+  font-size: 24px;
 }
 
-.info-payment-card{
-    margin-top: 40px;
-    margin-bottom: 40px;
+.info-payment-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.info-payment-card input{
-    margin-right: 15px;
+.info-payment-card input {
+  margin-right: 15px;
 }
 
 /* Button Payment */
 
-button.payment{
-    padding: 10px 15px;
-    border: none;
-    background-color: #f15757;
-    color: white;
-    width: 150px;
-    border-radius: 10px;
-    margin-bottom: 40px;
+button.payment {
+  padding: 10px 15px;
+  border: none;
+  background-color: #f15757;
+  color: white;
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }

@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
       900: {
         perPage: 1,
       },
-      
     },
   }).mount();
 });
@@ -27,7 +26,6 @@ document.getElementById("click-btn").onclick = function () {
   let check = document.getElementById("disable");
   check.classList.toggle("visibility");
 };
-
 
 // SLIDE SAME PRODUCTS
 
@@ -41,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
     rewind: true,
     pagination: false,
     breakpoints: {
-      
       1200: {
         perPage: 3,
       },
@@ -50,10 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
         perPage: 2,
       },
 
-      600:{
+      600: {
         perPage: 1,
-      }
+      },
     },
   }).mount();
 });
-

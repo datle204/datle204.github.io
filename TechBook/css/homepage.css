@@ -31,7 +31,6 @@ h1.title {
   background-color: #dddddd;
 }
 
-
 .card-item {
   width: 90%;
   margin: auto;
@@ -41,7 +40,7 @@ h1.title {
   margin-bottom: 80px;
 }
 
-.card-item:hover{
+.card-item:hover {
   border: 1px solid grey;
 }
 
@@ -52,7 +51,6 @@ h1.title {
   border-radius: 10px;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.4);
 }
-
 
 .books-showcase .card-item a.card-title {
   display: inline-block;
@@ -89,7 +87,6 @@ p.price {
 /* BEST SELLER BOOK */
 .big-box {
   padding: 20px;
-  
 }
 .best-seller-book {
   margin-top: 80px;
@@ -307,8 +304,7 @@ p.price {
   }
 }
 
-
-@media (min-width: 1800px){
+@media (min-width: 1800px) {
   .small-cmt-box {
     width: 450px;
   }
