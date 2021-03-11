@@ -9,12 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
     rewind: true,
     pagination: false,
     breakpoints: {
-      900: {
-        perPage: 1,
-      },
       1200: {
         perPage: 2,
       },
+
+      900: {
+        perPage: 1,
+      },
+      
     },
   }).mount();
 });
@@ -27,5 +29,31 @@ document.getElementById("click-btn").onclick = function () {
 };
 
 
-// EVENT CLICK SHOW FILTER ON MOBILE AND TABLET
+// SLIDE SAME PRODUCTS
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#card-slider-product", {
+    type: "loop",
+    cover: true,
+    autoplay: true,
+    interval: 4000,
+    perPage: 4,
+    rewind: true,
+    pagination: false,
+    breakpoints: {
+      
+      1200: {
+        perPage: 3,
+      },
+
+      991: {
+        perPage: 2,
+      },
+
+      600:{
+        perPage: 1,
+      }
+    },
+  }).mount();
+});
 

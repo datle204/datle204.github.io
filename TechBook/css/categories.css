@@ -3,7 +3,7 @@
 /* BANNER */
 
 .banner{
-    height: 400px;
+    height: 300px;
 }
 
 .banner-box {
@@ -61,6 +61,7 @@
     background-color: white;
     outline: none;
     margin-right: 20px;
+    
 }
 
 #sort-button{
@@ -202,5 +203,19 @@ footer{
 @media (min-width: 992px){
     .filter{
         display: block;
-    }   
+    }  
+    
+    #filter-button{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .filter-box .top-content{
+        display: block;
+    }
+
+    .filter-box .top-content .left-content{
+        margin-bottom: 20px;
+    }
 }

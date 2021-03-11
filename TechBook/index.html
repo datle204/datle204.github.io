@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="lib/bootstrap.min.css" />
     <link rel="shortcut icon" href="/TechBook/img/TB.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/homepage.css"/>
+    <link rel="stylesheet" href="css/homepage.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -75,8 +75,12 @@
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     <a class="dropdown-item" href="categories.html">Python</a>
-                    <a class="dropdown-item" href="categories.html">Javascript</a>
-                    <a class="dropdown-item" href="categories.html">Blockchain</a>
+                    <a class="dropdown-item" href="categories.html"
+                      >Javascript</a
+                    >
+                    <a class="dropdown-item" href="categories.html"
+                      >Blockchain</a
+                    >
                   </div>
                 </li>
                 <li class="nav-item">
@@ -85,7 +89,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Liên Hệ</a>
                 </li>
-                
+
                 <li class="nav-item">
                   <div class="search-box-mobile">
                     <div class="dropdown-menu" aria-labelledby="search">
@@ -131,7 +135,7 @@
                   <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="cart.html"
                     ><i class="fas fa-shopping-cart"></i
                   ></a>
                 </li>
@@ -155,7 +159,10 @@
             <h1 class="banner-box-main-title">
               Giảm giá 40% các sách của <span>Techmaster</span>
             </h1>
-            <button type="submit" class="buy-btn">Đặt Mua</button>
+            <form action="categories.html">
+              <button type="submit" class="buy-btn">Đặt Mua</button>
+            </form>
+            
           </div>
         </div>
       </div>
@@ -172,95 +179,108 @@
             <div class="row">
               <div class="col-md-6 col-lg-4">
                 <div class="card-item">
-                  <img src="/TechBook/img/hacker.jpg" alt="" class="card-img" />
-                  
-                  <a href="#" class="card-title">Hacker Lược Sử</a>
+                  <a href="product.html">
+                    <img
+                      src="/TechBook/img/hacker.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </a>
+                  <a href="product.html" class="card-title">Hacker Lược Sử</a>
                   <p class="price">₫240.000</p>
                   <button type="submit" class="add-to-cart">
                     Thêm vào giỏ
                   </button>
-                  
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="card-item">
-                  <img
-                    src="/TechBook/img/gian-diep.jpg"
-                    alt=""
-                    class="card-img"
-                  />
-                
-                  <a href="#" class="card-title">Gián Điệp Mạng</a>
+                  <a href="product.html">
+                    <img
+                      src="/TechBook/img/gian-diep.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </a>
+
+                  <a href="product.html" class="card-title">Gián Điệp Mạng</a>
                   <p class="price">₫240.000</p>
                   <button type="submit" class="add-to-cart">
                     Thêm vào giỏ
                   </button>
-                  
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="card-item">
-                  <img
-                    src="/TechBook/img/du-lieu-lon.jpg"
-                    alt=""
-                    class="card-img"
-                  />
-                  
-                  <a href="#" class="card-title">Dữ Liệu Lớn</a>
+                  <a href="product.html">
+                    <img
+                      src="/TechBook/img/du-lieu-lon.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </a>
+
+                  <a href="product.html" class="card-title">Dữ Liệu Lớn</a>
                   <p class="price">₫240.000</p>
                   <button type="submit" class="add-to-cart">
                     Thêm vào giỏ
                   </button>
-                  
                 </div>
               </div>
 
               <div class="col-md-6 col-lg-4">
                 <div class="card-item">
-                  <img
-                    src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
-                    alt=""
-                    class="card-img"
-                  />
-                  
-                  <a href="#" class="card-title">Phân Tích Dữ Liệu Tinh Gọn</a>
+                  <a href="product.html">
+                    <img
+                      src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </a>
+
+                  <a href="product.html" class="card-title"
+                    >Phân Tích Dữ Liệu Tinh Gọn</a
+                  >
                   <p class="price">₫240.000</p>
                   <button type="submit" class="add-to-cart">
                     Thêm vào giỏ
                   </button>
-                  
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="card-item">
-                  <img
-                    src="/TechBook/img/cuoc-cach-mang-blockchain-outline-01.jpg"
-                    alt=""
-                    class="card-img"
-                  />
-                  
-                  <a href="#" class="card-title">Cuộc Cách Mạng Blockchain</a>
+                  <a href="product.html">
+                    <img
+                      src="/TechBook/img/cuoc-cach-mang-blockchain-outline-01.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </a>
+
+                  <a href="product.html" class="card-title"
+                    >Cuộc Cách Mạng Blockchain</a
+                  >
                   <p class="price">₫240.000</p>
                   <button type="submit" class="add-to-cart">
                     Thêm vào giỏ
                   </button>
-                  
                 </div>
               </div>
               <div class="col-md-6 col-lg-4">
                 <div class="card-item">
-                  <img
-                    src="/TechBook/img/platform-ung-dung.jpg"
-                    alt=""
-                    class="card-img"
-                  />
-                 
-                  <a href="#" class="card-title">Ứng dụng</a>
+                  <a href="product.html">
+                    <img
+                      src="/TechBook/img/platform-ung-dung.jpg"
+                      alt=""
+                      class="card-img"
+                    />
+                  </a>
+
+                  <a href="product.html" class="card-title">Ứng dụng</a>
                   <p class="price">₫240.000</p>
                   <button type="submit" class="add-to-cart">
                     Thêm vào giỏ
                   </button>
-                  
                 </div>
               </div>
             </div>
@@ -292,11 +312,13 @@
             </div>
             <!-- Right Content -->
             <div class="content-right">
-              <img
-                src="/TechBook/img/an-minh.jpg"
-                alt=""
-                class="best-book-img"
-              />
+              <a href="product.html">
+                <img
+                  src="/TechBook/img/an-minh.jpg"
+                  alt=""
+                  class="best-book-img"
+                />
+              </a>
             </div>
             <!-- Show on mobile and tablet -->
             <div class="best-book-first-box">
@@ -436,7 +458,10 @@
           <p class="bottom-banner-title">
             Hãy dành tặng cho người thân và gia đình những cuốn sách hay nhất
           </p>
-          <button type="submit" class="buy-btn">Đặt Mua</button>
+          <form action="categories.html">
+            <button type="submit" class="buy-btn">Đặt Mua</button>
+          </form>
+          
         </div>
       </div>
     </main>
@@ -457,12 +482,18 @@
                 </div>
                 <ul>
                   <li>
-                    <p><i class="fas fa-map-marker-alt"></i> Cơ sở Tố Hữu: Tầng
-                    12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo
-                    dài, Hà Nội</p>
+                    <p>
+                      <i class="fas fa-map-marker-alt"></i> Cơ sở Tố Hữu: Tầng
+                      12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương
+                      kéo dài, Hà Nội
+                    </p>
                   </li>
-                  <li><p><i class="far fa-envelope"></i> Support@techbook.com</p></li>
-                  <li><p><i class="fas fa-mobile-alt"></i> 0928 2323 24</p></li>
+                  <li>
+                    <p><i class="far fa-envelope"></i> Support@techbook.com</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-mobile-alt"></i> 0928 2323 24</p>
+                  </li>
                 </ul>
               </div>
             </div>
