@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:description" content="Website bán sách về công nghệ" />
+    <meta name="description" content="Website bán sách về công nghệ" />
+    <title>TechBook Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <link rel="shortcut icon" href="/TechBook/img/TB.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/categories.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="logo">
+            <a class="navbar-brand" href="index.html"
+              ><img src="img/logo.png" alt="logo" class="logo-box"
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="click-btn"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <!-- Middle Box -->
+              <div class="middle-box">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Trang Chủ <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                  Bộ Sưu Tập Sách
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="categories.html">Python</a>
+                    <a class="dropdown-item" href="categories.html"
+                      >Javascript</a
+                    >
+                    <a class="dropdown-item" href="categories.html"
+                      >Blockchain</a
+                    >
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Liên Hệ</a>
+                </li>
+                <li class="nav-item">
+                  <div class="search-box-mobile">
+                    <div class="dropdown-menu" aria-labelledby="search">
+                      <div class="search-form">
+                        <form>
+                          <input type="text" placeholder="Search..." />
+                          <button type="submit">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- End Middle box -->
+              </div>
+              <!-- Last box -->
+              <div class="last-box">
+                <li class="nav-item">
+                  <div class="search-box">
+                    <a
+                      class="nav-link"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      id="search"
+                      href="#"
+                      ><i class="fas fa-search"></i
+                    ></a>
+                    <div class="dropdown-menu" aria-labelledby="search">
+                      <div class="search-form">
+                        <form>
+                          <input type="text" placeholder="Search..." />
+                          <button type="submit">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html"
+                    ><i class="fas fa-shopping-cart"></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                </li>
+                <!-- End Last box-->
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <!-- BANNER -->
+      <div class="banner">
+        <div class="container">
+          <div class="banner-box" id="disable">
+            <h1 class="banner-cate-main-title">Sách Mới Nhất</h1>
+          </div>
+        </div>
+      </div>
+      <!-- FILTER COLUMN -->
+      <div class="container">
+        <div class="filter-box">
+          <!-- FILTER BOX TOP CONTENT -->
+          <div class="top-content">
+            <div class="left-content">
+              <div class="search-form">
+                <form>
+                  <input type="text" placeholder="Search..." />
+                  <button type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="right-content">
+              <button id="filter-button">
+                Bộ Lọc <i class="fas fa-filter"></i>
+              </button>
+              <button id="sort-button">
+                Sắp Xếp <i class="fas fa-sort"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Separate two parts -->
+          <div class="black-line"></div>
+          <!-- FILTER BOX BOTTOM CONTENT -->
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="filter" id="filter-disable">
+                <!-- CUSTOM FILTER-->
+                <div class="filter-categories">
+                  <div class="filter-title">
+                    <p class="filter-main-title">Danh MỤC SÁCH</p>
+                    <div class="bottom-black-line">
+                      <div class="bottom-red-line"></div>
+                    </div>
+                  </div>
+                  <ul>
+                    <li><a href="#">Lập trình Website</a></li>
+                    <li><a href="#">Big Data</a></li>
+                    <li><a href="#">React JS</a></li>
+                    <li><a href="#">Backend</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">Python</a></li>
+                  </ul>
+                </div>
+                <div class="filter-price">
+                  <div class="filter-title">
+                    <p class="filter-main-title">Giá tiền</p>
+                    <div class="bottom-black-line">
+                      <div class="bottom-red-line"></div>
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="price-1"
+                        name="price-1"
+                        value="price-1"
+                      /><label for="price-1">0₫ - 150,000₫</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="price-2"
+                        name="price-1"
+                        value="price-1"
+                      /><label for="price-2">150,000₫ - 300,000₫</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="price-3"
+                        name="price-1"
+                        value="price-1"
+                      /><label for="price-3">300,000₫ - 500,000₫</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="price-4"
+                        name="price-1"
+                        value="price-1"
+                      /><label for="price-4">500,000₫ - 700,000₫</label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="price-5"
+                        name="price-1"
+                        value="price-1"
+                      /><label for="price-5">700,000₫ - trở lên</label>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="filter-author">
+                  <div class="filter-title">
+                    <p class="filter-main-title">Tác Giả</p>
+                    <div class="bottom-black-line">
+                      <div class="bottom-red-line"></div>
+                    </div>
+                  </div>
+                  <label>
+                    <input
+                        type="checkbox"
+                        data-jplist-control="checkbox-sort"
+                        data-path=".card-title"
+                        data-group="group1"
+                        data-order="asc"
+                        data-type="text"
+                        />
+                        Hawk Phillip
+                </label>
+                
+                <!-- content to sort -->
+                <div data-jplist-group="group1">
+                    <!-- item -->
+                    <div data-jplist-item>
+                        <div class="title">
+                            <input
+                            type="checkbox"
+                            id="author-3"
+                            name="author-3"
+                            value="Hawk Phillip"
+                          /><label for="author-3">Hawk Phillip</label>
+                        </div> 
+                    </div>
+                    <!-- item -->
+                    <div data-jplist-item>
+                        <div class="title">
+                            <input
+                        type="checkbox"
+                        id="author-3"
+                        name="author-3"
+                        value="Hawk Phillip"
+                      /><label for="author-3">Hawk Phillip</label>
+                        </div>
+                        
+                    </div>
+                
+                    <!-- item -->
+                    <div data-jplist-item>
+                        <div class="title">
+                            <input
+                            type="checkbox"
+                            id="author-1"
+                            name="author-1"
+                            value="Alexander"
+                        /><label for="author-1">Alexander</label>
+                        </div>
+                       
+                    </div>
+                
+                </div>
+
+                  
+                </div>
+                <div class="small-banner"></div>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="books-showcase" data-jplist-group="group1">
+                <div class="row">
+                  <div class="col-md-6 col-lg-4" data-jplist-item>
+                    <div class="card-item">
+                      <a href="product.html"
+                        ><img
+                          src="/TechBook/img/hacker.jpg"
+                          alt=""
+                          class="card-img"
+                      /></a>
+
+                      <a href="product.html" class="card-title"
+                        >Hacker Lược Sử</a
+                      >
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-jplist-item>
+                    <div class="card-item">
+                      <a href="product.html">
+                        <img
+                          src="/TechBook/img/gian-diep.jpg"
+                          alt=""
+                          class="card-img"
+                      /></a>
+                      <a href="product.html" class="card-title"
+                        >Gián Điệp Mạng</a
+                      >
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-jplist-item>
+                    <div class="card-item">
+                      <a href="product.html">
+                        <img
+                          src="/TechBook/img/du-lieu-lon.jpg"
+                          alt=""
+                          class="card-img"
+                        />
+                      </a>
+
+                      <a href="product.html" class="card-title">Dữ Liệu Lớn</a>
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-lg-4" data-jplist-item>
+                    <div class="card-item">
+                      <a href="product.html">
+                        <img
+                          src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
+                          alt=""
+                          class="card-img"
+                        />
+                      </a>
+
+                      <a href="product.html" class="card-title"
+                        >Phân Tích Dữ Liệu Tinh Gọn</a
+                      >
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-jplist-item>
+                    <div class="card-item">
+                      <a href="product.html">
+                        <img
+                          src="/TechBook/img/cuoc-cach-mang-blockchain-outline-01.jpg"
+                          alt=""
+                          class="card-img"
+                        />
+                      </a>
+
+                      <a href="product.html" class="card-title"
+                        >Cuộc Cách Mạng Blockchain</a
+                      >
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4" data-jplist-item>
+                    <div class="card-item">
+                      <a href="product.html">
+                        <img
+                          src="/TechBook/img/platform-ung-dung.jpg"
+                          alt=""
+                          class="card-img"
+                        />
+                      </a>
+
+                      <a href="product.html" class="card-title">Ứng dụng</a>
+                      <p class="price">₫240.000</p>
+                      <button type="submit" class="add-to-cart">
+                        Thêm vào giỏ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pages">
+                <div class="pages-box">
+                  <button type="submit" class="btn-active">
+                    <a href="#">1</a>
+                  </button>
+                  <button type="submit"><a href="#">2</a></button>
+                  <button type="submit"><a href="#">3</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Separate two parts -->
+        <div class="black-line"></div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <!-- TOP FOOTER -->
+      <div class="container">
+        <div class="top-footer">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-box">
+                <div class="main-top-title">
+                  <h1 class="footer-title">THÔNG TIN</h1>
+                  <div class="bottom-black-line">
+                    <div class="bottom-red-line"></div>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <p>
+                      <i class="fas fa-map-marker-alt"></i> Cơ sở Tố Hữu: Tầng
+                      12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương
+                      kéo dài, Hà Nội
+                    </p>
+                  </li>
+                  <li>
+                    <p><i class="far fa-envelope"></i> Support@techbook.com</p>
+                  </li>
+                  <li>
+                    <p><i class="fas fa-mobile-alt"></i> 0928 2323 24</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-box">
+                <div class="main-top-title">
+                  <h1 class="footer-title">GIỚI THIỆU</h1>
+                  <div class="bottom-black-line">
+                    <div class="bottom-red-line"></div>
+                  </div>
+                </div>
+                <ul>
+                  <li><a href="#">Thông tin</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                  <li><a href="#">Chính sách mua hàng</a></li>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Chăm sóc khách hàng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-box">
+                <div class="main-top-title">
+                  <h1 class="footer-title">TÀI KHOẢN</h1>
+                  <div class="bottom-black-line">
+                    <div class="bottom-red-line"></div>
+                  </div>
+                </div>
+                <ul>
+                  <li><a href="#">Đăng nhập</a></li>
+                  <li><a href="#">Giỏ hàng</a></li>
+                  <li><a href="#">Sách yêu thích</a></li>
+                  <li><a href="#">Kiểm tra đơn hàng</a></li>
+                  <li><a href="#">Giúp đỡ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BOTTOM FOOTER -->
+      <div class="bottom-footer">
+        <div class="group-social-links">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <p class="copyright">Copyright © 2021 - Made by DatLe</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="/TechBook/js/cate.js"></script>
+    <script src="/js/jplist.min.js"></script>
+    <script src="/TechBook/js/script.js"></script>
+  </body>
+</html>
