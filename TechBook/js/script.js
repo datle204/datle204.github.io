@@ -1,3 +1,7 @@
+
+
+
+
 // CUSTOMER COMMENT CAROUSEL
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#card-slider", {
@@ -56,3 +60,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 jplist.init();
+
+

@@ -41,6 +41,7 @@ a.sign-up {
   width: 70%;
   padding: 10px;
   border: 1px solid #dddddd;
+  background-color: transparent;
 }
 
 .info-payment .row select {

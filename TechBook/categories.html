@@ -51,34 +51,13 @@
             <ul class="navbar-nav">
               <!-- Middle Box -->
               <div class="middle-box">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="index.html"
-                    >Trang Chủ <span class="sr-only">(current)</span></a
+                    >Trang Chủ</a
                   >
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                  Bộ Sưu Tập Sách
-                  </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <a class="dropdown-item" href="categories.html">Python</a>
-                    <a class="dropdown-item" href="categories.html"
-                      >Javascript</a
-                    >
-                    <a class="dropdown-item" href="categories.html"
-                      >Blockchain</a
-                    >
-                  </div>
+                <li class="nav-item active">
+                  <a class="nav-link" href="categories.html">Bộ Sưu Tập Sách</a>
                 </li>
 
                 <li class="nav-item">
@@ -140,13 +119,70 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                  <button class="nav-link" data-bs-toggle="modal" data-tabs="login" data-bs-target=".user-modal"><i class="fas fa-user"></i></button>
                 </li>
                 <!-- End Last box-->
               </div>
             </ul>
           </div>
         </nav>
+        <!-- Modal signup and login -->
+        <div class="modal fade user-modal" tabindex="-1">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="nav nav-tabs" role="tablist">
+                
+                <button class="tab-btn active" id="login-indicator" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#login">Đăng nhập</a>
+                    
+                
+                <button class="tab-btn" id="signup-indicator" type="button" role="tab" data-bs-toggle="tab" data-bs-target="#signup">Đăng ký</a>
+                
+              </div>
+    
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade show active" id="login">
+                  <form>
+                    <div class="tab-input-items">
+                      <input type="email" name="Email" id="email" placeholder="Tên đăng nhập / Email"/>
+                    </div>
+                    <div class="tab-input-items">
+                      <input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+                    </div>
+                    <div class="tab-input-items check-field">
+                      <input type="checkbox" id="remember-pass" name="remember-pass"/><label for="remember-pass">Ghi nhớ tài khoản</label><br/>
+                    </div>
+                    
+                    <button id="login-btn" type ="submit" data-dismiss="modal">Đăng nhập</button>
+                    
+                    <a href="#" class="reset-password"><i class="fa fa-question-circle"></i> Quên mật khẩu?</a>
+                  </form>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="signup">
+                  <form>
+                    <div class="tab-input-items">
+                      <input type="text" name="Name" id="name" placeholder="Họ tên"/>
+                    </div>
+                    <div class="tab-input-items">
+                      <input type="text" name="Phone" id="phone" placeholder="Số điện thoại"/>
+                    </div>
+                    <div class="tab-input-items">
+                      <input type="email" name="Email" id="email" placeholder="Tên đăng nhập / Email"/>
+                    </div>
+                    <div class="tab-input-items">
+                      <input type="password" name="Password" id="password" placeholder="Mật khẩu"/>
+                    </div>
+                    <div class="tab-input-items check-field">
+                      <input type="checkbox" id="show-pass" name="show-pass"/><label for="show-pass">Hiển thị mật khẩu</label><br/>
+                    </div>
+      
+                    <button id="signup-btn" type="submit">Đăng ký</button>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <!-- MAIN -->

@@ -7,6 +7,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+ol, ul{
+  padding-left: 0;
+}
+
 html {
   font-size: 16px;
 }
@@ -55,6 +59,7 @@ ul li {
 
 header {
   height: 80px;
+  margin-bottom: 10px;
 }
 
 .container {
@@ -109,6 +114,12 @@ header {
 }
 .navbar-light .navbar-nav .nav-link {
   color: black;
+}
+
+button.nav-link{
+    background-color:#ffffff0d;
+    outline: none;
+    border: none;
 }
 
 .last-box {
@@ -261,7 +272,7 @@ header {
 /* Top Footer */
 
 footer {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .footer-box .main-top-title .footer-title {
@@ -372,6 +383,12 @@ footer {
     justify-content: space-between;
   }
 
+  button.nav-link{
+    background-color: white;
+    outline: none;
+    border: none;
+  }
+
   .last-box .nav-item {
     margin: 0;
   }
@@ -428,4 +445,73 @@ footer {
   .banner-box-main-title {
     font-size: 26px;
   }
+}
+
+
+/* TEST */
+
+
+.user-modal .modal-content .nav-tabs>.tab-btn {
+  width: 50%;
+  text-align: center;
+  background-color: #ddd;
+  height: 48px;
+  line-height: 48px;
+  border: none;
+  
+}
+
+.user-modal .modal-content .nav-tabs>.tab-btn.active{
+  background-color: white;
+}
+
+.user-modal .modal-content .nav-tabs>.tab-btn.active>a {
+  border: 0;
+  color: #666;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.user-modal .modal-content .tab-content {
+  padding: 15px;
+}
+
+.user-modal input[type="text"], .user-modal input[type="email"], .user-modal input[type="password"] {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.user-modal .check-field{
+  margin-bottom: 15px;
+}
+.user-modal .check-field input{
+  margin-right : 10px;
+}
+
+.user-modal #login-btn, .user-modal #signup-btn {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: #fd837c;
+  color: #fff;
+  margin-bottom: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.user-modal #login-btn:hover, .user-modal #signup-btn:hover{
+  background-color: #ff392d;
+}
+
+/* active nav-item */
+.navbar-nav .middle-box li.active a{
+  color: #fd837c;
 }
