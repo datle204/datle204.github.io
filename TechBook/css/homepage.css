@@ -32,7 +32,7 @@ h1.title {
 }
 
 .card-item {
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding: 20px;
   text-align: center;
@@ -266,6 +266,10 @@ p.price {
 }
 
 @media (min-width: 992px) {
+
+  .card-item {
+    width: 50%;
+  }
   /* BEST SELLER BOOK */
 
   .best-seller-book {
