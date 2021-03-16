@@ -96,7 +96,7 @@ header {
   padding-top: 10px;
   background-color: #0000000d;
   width: 100%;
-  margin-top: 18px;
+  margin-top: 28px;
   text-align: center;
 }
 
@@ -514,4 +514,9 @@ footer {
 /* active nav-item */
 .navbar-nav .middle-box li.active a{
   color: #fd837c;
+}
+
+#click-btn:active{
+  border: none;
+  outline: none;
 }

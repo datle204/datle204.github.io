@@ -1,7 +1,4 @@
 
-
-
-
 // CUSTOMER COMMENT CAROUSEL
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#card-slider", {
