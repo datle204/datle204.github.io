@@ -203,16 +203,17 @@ button.nav-link{
 
 .search-form input {
   border: none;
-  /* border-top: solid 1px #ccc;
+  border-radius: none;
+  border-top: solid 1px #ccc;
   border-bottom: solid 1px #ccc;
-  border-left: 1px solid #ccc; */
+  border-left: 1px solid #ccc;
   padding: 3px 0 3px 10px;
   font-size: 14px;
 }
 
 .search-form button {
   background-color: #fff;
-  /* border: solid 1px #ccc; */
+  border: solid 1px #ccc;
   font-size: 14px;
   padding: 3px 8px;
   color: #333;
