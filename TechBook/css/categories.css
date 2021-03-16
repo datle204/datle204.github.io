@@ -148,9 +148,7 @@
   background-repeat: no-repeat;
 }
 
-.card-item {
-  width: 100%;
-}
+
 
 .pages-box {
   padding-top: 20px;
@@ -200,6 +198,12 @@ footer {
   #filter-button {
     display: none;
   }
+  
+  .card-item{
+    width: 100%;
+  }
+  
+
 }
 
 @media (max-width: 400px) {
@@ -210,4 +214,6 @@ footer {
   .filter-box .top-content .left-content {
     margin-bottom: 20px;
   }
+
+
 }

@@ -212,3 +212,36 @@
     }
   }
   
+ 
+
+  .top-card{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .group-btn{
+    position: absolute;
+    color: gray;
+    display: none;
+  
+  }
+
+  .top-card:hover .card-img{
+    opacity: 0.4;
+    background-color: black;
+  }
+  
+  .top-card:hover .group-btn{
+    display: block;
+  }
+  .group-btn a{
+    color: black;
+  }
+
+  .group-btn a:hover{
+    color: #e56464;
+  }

@@ -211,14 +211,14 @@
           <div class="top-payment-content">
             <h2>ĐỊA CHỈ GIAO HÀNG</h2>
             <div class="black-line"></div>
-            <form action="#" class="info-payment">
+            <form action="#" class="info-payment" method="POST">
               <div class="row">
                 <label for="name">Họ và tên người nhận</label>
                 <input
                   type="text"
                   placeholder="Nhập họ và tên người nhận"
                   id="name"
-                  required
+                  requiredq
                 />
               </div>
               <div class="row">
@@ -242,7 +242,7 @@
               <div class="row">
                 <label for="city">Tỉnh/Thành Phố</label>
                 <select id="city" required>
-                  <option value="default"></option>
+                  <option value="default" disabled="disabled" selected="selected">Tỉnh/Thành Phố</option>
                   <option value="Hà Nội">Hà Nội</option>
                   <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
                 </select>
@@ -250,7 +250,7 @@
               <div class="row">
                 <label for="district">Quận/Huyện</label>
                 <select id="district" required>
-                  <option value="default"></option>
+                  <option value="default">Quận/Huyện</option>
                   <option value="Hoàn Kiếm">Hoàn Kiếm</option>
                   <option value="Hà Đông">Hà Đông</option>
                   <option value="Quận 1">Quận 1</option>

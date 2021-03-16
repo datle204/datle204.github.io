@@ -80,3 +80,7 @@ button.payment {
   border-radius: 10px;
   margin-bottom: 40px;
 }
+
+select.gray-color{
+  color: yellow;
+}
