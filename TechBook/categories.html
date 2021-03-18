@@ -215,9 +215,15 @@
               <button id="filter-button">
                 Bộ Lọc <i class="fas fa-filter"></i>
               </button>
-              <button id="sort-button">
-                Sắp Xếp <i class="fas fa-sort"></i>
-              </button>
+              <div class="dropdown">
+                <button class="btn"id="dropdownMenuButton">
+                  Sắp Xếp  <i class="fas fa-sort"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="show">
+                  <li><button class="dropdown-item" data-sort-by="name" id="sort-name-btn">Theo Tên</button></li>
+                  <li><button class="dropdown-item" >Mới Nhất</a></button>
+                </ul>
+              </div>
             </div>
           </div>
           <!-- Separate two parts -->
@@ -264,7 +270,7 @@
                         type="checkbox"
                         id="price-2"
                         name="price-1"
-                        value="price-1"
+                        value="price-1" data-filter="number"
                       /><label for="price-2">150,000₫ - 300,000₫</label>
                     </li>
                     <li>
@@ -347,9 +353,9 @@
               </div>
             </div>
             <div class="col-lg-9">
-              <div class="books-showcase">
-                <div class="row">
-                  <div class="col-md-6 col-lg-4">
+              <div class="books-showcase" id="page-1">
+                <div class="row grid">
+                  <div class="col-md-6 col-lg-4 element-item">
                     <div class="card-item">
                       <div class="top-card">
                         <a href="product.html"
@@ -366,16 +372,16 @@
                         </div>
                       </div>
                       <div class="card-line"></div>
-                      <a href="product.html" class="card-title"
+                      <a href="product.html" class="card-title name"
                         >Hacker Lược Sử</a
                       >
-                      <p class="price">₫240.000</p>
+                      <p class="price number">₫299.000</p>
                       <button type="submit" class="add-to-cart">
                         Thêm vào giỏ
                       </button>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 element-item">
                     <div class="card-item">
                       <div class="top-card">
                         <a href="product.html">
@@ -392,16 +398,16 @@
                         </div>
                       </div>
                       <div class="card-line"></div>
-                      <a href="product.html" class="card-title"
+                      <a href="product.html" class="card-title name"
                         >Gián Điệp Mạng</a
                       >
-                      <p class="price">₫240.000</p>
+                      <p class="price">₫139.000</p>
                       <button type="submit" class="add-to-cart">
                         Thêm vào giỏ
                       </button>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 element-item">
                     <div class="card-item">
                       <div class="top-card">
                         <a href="product.html">
@@ -419,15 +425,15 @@
                         </div>
                       </div>
                       <div class="card-line"></div>
-                      <a href="product.html" class="card-title">Dữ Liệu Lớn</a>
-                      <p class="price">₫240.000</p>
+                      <a href="product.html" class="card-title name">Dữ Liệu Lớn</a>
+                      <p class="price number">₫259.000</p>
                       <button type="submit" class="add-to-cart">
                         Thêm vào giỏ
                       </button>
                     </div>
                   </div>
 
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 element-item">
                     <div class="card-item">
                       <div class="top-card">
                         <a href="product.html">
@@ -445,16 +451,16 @@
                         </div>
                       </div>
                       <div class="card-line"></div>
-                      <a href="product.html" class="card-title"
+                      <a href="product.html" class="card-title name"
                         >Phân Tích Dữ Liệu</a
                       >
-                      <p class="price">₫240.000</p>
+                      <p class="price number">₫240.000</p>
                       <button type="submit" class="add-to-cart">
                         Thêm vào giỏ
                       </button>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 element-item">
                     <div class="card-item">
                       <div class="top-card">
                         <a href="product.html">
@@ -472,16 +478,16 @@
                         </div>
                       </div>
                       <div class="card-line"></div>
-                      <a href="product.html" class="card-title"
+                      <a href="product.html" class="card-title name"
                         >Cách Mạng Blockchain</a
                       >
-                      <p class="price">₫240.000</p>
+                      <p class="price number">₫280.000</p>
                       <button type="submit" class="add-to-cart">
                         Thêm vào giỏ
                       </button>
                     </div>
                   </div>
-                  <div class="col-md-6 col-lg-4">
+                  <div class="col-md-6 col-lg-4 element-item">
                     <div class="card-item">
                       <div class="top-card">
                         <a href="product.html">
@@ -500,8 +506,8 @@
 
                       </div>
                       <div class="card-line"></div>
-                      <a href="product.html" class="card-title">Ứng dụng</a>
-                      <p class="price">₫240.000</p>
+                      <a href="product.html" class="card-title name">Ứng dụng</a>
+                      <p class="price">₫120.000</p>
                       <button type="submit" class="add-to-cart">
                         Thêm vào giỏ
                       </button>
@@ -509,8 +515,185 @@
                   </div>
                 </div>
               </div>
+              <!-- Page 2 -->
+              <div class="books-showcase" id="page-2">
+                  <div class="row grid" >
+                    <div class="col-md-6 col-lg-4 element-item">
+                      <div class="card-item">
+                        <div class="top-card">
+                          <a href="product.html"
+                            ><img
+                              src="/TechBook/img/hacker.jpg"
+                              alt=""
+                              class="card-img"
+                          /></a>
+                          <div class="group-btn">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            <a class="nav-link" href="product.html"
+                          ><i class="fas fa-search"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <a href="product.html" class="card-title name"
+                          >Hacker Lược Sử</a
+                        >
+                        <p class="price number">₫299.000</p>
+                        <button type="submit" class="add-to-cart">
+                          Thêm vào giỏ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 element-item">
+                      <div class="card-item">
+                        <div class="top-card">
+                          <a href="product.html">
+                            <img
+                              src="/TechBook/img/gian-diep.jpg"
+                              alt=""
+                              class="card-img"
+                          /></a>
+                          <div class="group-btn">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            <a class="nav-link" href="product.html"
+                          ><i class="fas fa-search"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <a href="product.html" class="card-title name"
+                          >Gián Điệp Mạng</a
+                        >
+                        <p class="price">₫139.000</p>
+                        <button type="submit" class="add-to-cart">
+                          Thêm vào giỏ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 element-item">
+                      <div class="card-item">
+                        <div class="top-card">
+                          <a href="product.html">
+                            <img
+                              src="/TechBook/img/du-lieu-lon.jpg"
+                              alt=""
+                              class="card-img"
+                            />
+                          </a>
+                          <div class="group-btn">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            <a class="nav-link" href="product.html"
+                          ><i class="fas fa-search"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <a href="product.html" class="card-title name">Dữ Liệu Lớn</a>
+                        <p class="price number">₫259.000</p>
+                        <button type="submit" class="add-to-cart">
+                          Thêm vào giỏ
+                        </button>
+                      </div>
+                    </div>
 
-              <div class="pages">
+                    <div class="col-md-6 col-lg-4 element-item">
+                      <div class="card-item">
+                        <div class="top-card">
+                          <a href="product.html">
+                            <img
+                              src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
+                              alt=""
+                              class="card-img"
+                            />
+                          </a>
+                          <div class="group-btn">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            <a class="nav-link" href="product.html"
+                          ><i class="fas fa-search"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <a href="product.html" class="card-title name"
+                          >Phân Tích Dữ Liệu</a
+                        >
+                        <p class="price number">₫240.000</p>
+                        <button type="submit" class="add-to-cart">
+                          Thêm vào giỏ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 element-item">
+                      <div class="card-item">
+                        <div class="top-card">
+                          <a href="product.html">
+                            <img
+                              src="/TechBook/img/cuoc-cach-mang-blockchain-outline-01.jpg"
+                              alt=""
+                              class="card-img"
+                            />
+                          </a>
+                          <div class="group-btn">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            <a class="nav-link" href="product.html"
+                          ><i class="fas fa-search"></i
+                            ></a>
+                          </div>
+                        </div>
+                        <div class="card-line"></div>
+                        <a href="product.html" class="card-title name"
+                          >Cách Mạng Blockchain</a
+                        >
+                        <p class="price number">₫280.000</p>
+                        <button type="submit" class="add-to-cart">
+                          Thêm vào giỏ
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 element-item">
+                      <div class="card-item">
+                        <div class="top-card">
+                          <a href="product.html">
+                            <img
+                              src="/TechBook/img/platform-ung-dung.jpg"
+                              alt=""
+                              class="card-img"
+                            />
+                          </a>
+                          <div class="group-btn">
+                            <a class="nav-link" href="#"><i class="fas fa-heart"></i></a>
+                            <a class="nav-link" href="product.html"
+                          ><i class="fas fa-search"></i
+                            ></a>
+                          </div>
+
+                        </div>
+                        <div class="card-line"></div>
+                        <a href="product.html" class="card-title name">Ứng dụng</a>
+                        <p class="price">₫120.000</p>
+                        <button type="submit" class="add-to-cart">
+                          Thêm vào giỏ
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Page 2 -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#page-1" id="page-one">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#page-2" id="page-two">2</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <!-- <div class="pages">
                 <div class="pages-box">
                   <button type="submit" class="btn-active">
                     <a href="#">1</a>
@@ -518,7 +701,7 @@
                   <button type="submit"><a href="#">2</a></button>
                   <button type="submit"><a href="#">3</a></button>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -617,11 +800,11 @@
     </footer>
 
     <!-- JS -->
+    
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <script src="/TechBook/js/cate.js"></script>
-    <script src="js/jplist.min.js"></script>
-    <script src="/TechBook/js/script.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/cate.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

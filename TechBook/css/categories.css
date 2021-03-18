@@ -32,6 +32,10 @@
   align-items: center;
 }
 
+.filter-box .top-content .right-content{
+  display: flex;
+  justify-content: space-between;
+}
 .filter-box .top-content .right-content button {
   color: #515151;
   font-size: 14px;
@@ -40,6 +44,20 @@
 .filter-box .top-content .right-content button:hover {
   text-decoration: none;
   color: #e56464;
+}
+
+#dropdownMenuButton:hover{
+  color: black;
+  outline: none;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.filter-box .top-content .right-content .dropdown-menu{
+  background-color: white;
+  border: 1px solid gray;
+  position: absolute;
+  right: 0;
 }
 
 .filter-box {
@@ -99,13 +117,13 @@
   font-weight: 500;
 }
 
-.filter-categories ul li {
-  padding-bottom: 10px;
+.filter ul li {
+  margin-bottom: 10px;
 }
 
 .filter-categories ul li a {
   color: #515151;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .filter-categories ul li a:hover {
@@ -129,6 +147,7 @@
   top: 0;
 }
 
+
 .filter ul li input {
   margin-right: 10px;
   cursor: pointer;
@@ -148,7 +167,9 @@
   background-repeat: no-repeat;
 }
 
-
+.books-showcase {
+  margin-top: 80px;
+}
 
 .pages-box {
   padding-top: 20px;
@@ -202,7 +223,6 @@ footer {
   .card-item{
     width: 100%;
   }
-  
 
 }
 
@@ -214,6 +234,17 @@ footer {
   .filter-box .top-content .left-content {
     margin-bottom: 20px;
   }
+}
 
 
+.dropdown-menu.show {
+  display: block;
+}
+
+.grid{
+  max-width: 100000px;
+}
+
+#page-2{
+  display: none;
 }

@@ -110,7 +110,7 @@
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
-                      id="search"
+                      id="search" 
                       href="#"
                       ><i class="fas fa-search"></i
                     ></a>
@@ -174,9 +174,26 @@
               <button id="filter-button">
                 Bộ Lọc <i class="fas fa-filter"></i>
               </button>
-              <button id="sort-button">
-                Sắp Xếp <i class="fas fa-sort"></i>
-              </button>
+              <div class="sort-abc">
+                <button id="sort-button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >
+                  Sắp Xếp <i class="fas fa-sort"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="search">
+                  <div class="search-form">
+                    <form>
+                      <input type="text" placeholder="Search..." />
+                      <button type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           <!-- Separate two parts -->
@@ -260,56 +277,46 @@
                       <div class="bottom-red-line"></div>
                     </div>
                   </div>
-                  <label>
-                    <input
-                        type="checkbox"
-                        data-jplist-control="checkbox-sort"
-                        data-path=".card-title"
-                        data-group="group1"
-                        data-order="asc"
-                        data-type="text"
-                        />
-                        Hawk Phillip
-                </label>
+                
                 
                 <!-- content to sort -->
-                <div data-jplist-group="group1">
+                <ul>
                     <!-- item -->
-                    <div data-jplist-item>
-                        <div class="title">
-                            <input
-                            type="checkbox"
-                            id="author-3"
-                            name="author-3"
-                            value="Hawk Phillip"
-                          /><label for="author-3">Hawk Phillip</label>
-                        </div> 
-                    </div>
+                    <li>
+                       
+                      <input
+                      type="checkbox"
+                      id="author-3"
+                      name="author-3"
+                      value="Hawk Phillip"
+                    /><label for="author-3">Hawk Phillip</label>
+                    
+                      </li>
                     <!-- item -->
-                    <div data-jplist-item>
-                        <div class="title">
-                            <input
+                    <li>
+                        
+                        <input
                         type="checkbox"
                         id="author-3"
                         name="author-3"
                         value="Hawk Phillip"
                       /><label for="author-3">Hawk Phillip</label>
-                        </div>
                         
-                    </div>
+                        
+                      </li>
                 
                     <!-- item -->
-                    <div data-jplist-item>
-                        <div class="title">
+                    <li>
+                        
                             <input
                             type="checkbox"
                             id="author-1"
                             name="author-1"
                             value="Alexander"
                         /><label for="author-1">Alexander</label>
-                        </div>
-                       
-                    </div>
+                      
+
+                      </li>
                 
                 </div>
 
@@ -554,7 +561,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="/TechBook/js/cate.js"></script>
-    <script src="/js/jplist.min.js"></script>
     <script src="/TechBook/js/script.js"></script>
   </body>
 </html>
