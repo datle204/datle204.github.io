@@ -248,3 +248,16 @@ footer {
 #page-2{
   display: none;
 }
+
+.page-link{
+  color: black;
+}
+
+.page-link:hover{
+  background-color:  #e56464;
+}
+
+.active-pagi{
+  background-color:  #e56464;
+};
+}

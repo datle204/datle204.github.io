@@ -1,4 +1,5 @@
 
+
 // CUSTOMER COMMENT CAROUSEL
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#card-slider", {
@@ -56,14 +57,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.getElementById("page-two").onclick = function(){
-  document.getElementById("page-1").style.display = "none";
-  document.getElementById("page-2").style.display = "block";
+// Change Image Slide
+
+let mainImg = document.getElementsByClassName("main-img")[0];
+
+let subImgs = document.getElementsByClassName("sub-img");
+
+for (let i = 0; i < subImgs.length; i++) {
+  function changeMainImg() {
+    mainImg.src = `/TechBook/img/sub-img/sub-img-${i}.jpeg`
+  }
+  subImgs[i].addEventListener("click", changeMainImg);
 }
 
-document.getElementById("page-one").onclick = function(){
-  document.getElementById("page-2").style.display = "none";
-  document.getElementById("page-1").style.display = "block";
+
+// Delete Product
+
+let deleteProduct = document.getElementById("delete-btn");
+let deleteItem = document.getElementById("cart-item"); 
+
+deleteProduct.onclick = function(){
+  deleteItem.classList.add("display-none");
+  document.getElementById("emptyCart").classList.add("display-block");
 }
-
-

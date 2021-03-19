@@ -207,17 +207,19 @@
           <div class="top-main-detail">
             <div class="left-content">
               <div class="pictures">
+            
                 <div class="slide-pic">
                   <img
-                    src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
-                    alt=""
+                    src="/TechBook/img/sub-img/sub-img-0.jpeg"
+                    alt="" class="sub-img"
                   />
-                  <img src="/TechBook/img/sale-off.jpg" alt="" />
+                  <img src="/TechBook/img/sub-img/sub-img-1.jpeg" alt="" class="sub-img"/>
                 </div>
+
                 <div class="main-pic">
                   <img
                     src="/TechBook/img/phan-tich-du-lieu-tinh-gon.jpg"
-                    alt=""
+                    alt="" class="main-img"
                   />
                 </div>
               </div>
@@ -279,12 +281,12 @@
                 <p class="last-price">₫360.000</p>
               </div>
               <div class="add-to-cart-setup">
-                <div class="quantity-box">
-                  <button id="subtract">-</button>
-                  <div id="quantity">1</div>
-                  <button id="addition">+</button>
-                </div>
-                <form action="cart.html">
+                <form action="cart.html" class="form-cart">
+                  <div class="quantity-box">
+                    <p>Số Lượng</p>
+                    <input type="number" min="1" value="1"class="quantity"></input>
+                  </div>
+                  
                   <button type="submit" class="add-to-cart">
                     Đặt Mua Ngay
                   </button>

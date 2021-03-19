@@ -15,6 +15,24 @@ a.sign-up {
   color: #f15757;
 }
 
+.mobile-cart-detail{
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #dddddd;
+  padding: 20px;
+}
+
+.mobile-cart-detail .left-mobile-cart{
+  width: 50%;
+  align-items: center;
+}
+
+.mobile-cart-detail .left-mobile-cart img{
+  width: 60%;  
+}
+
+
+
 /* TOP PAYMENT CONTENT */
 .top-payment-content {
   margin-top: 40px;
@@ -83,4 +101,11 @@ button.payment {
 
 select.gray-color{
   color: yellow;
+}
+
+@media(min-width: 992px){
+  .mobile-cart-detail .left-mobile-cart{
+    width: 30%;
+    align-items: center;
+  }
 }

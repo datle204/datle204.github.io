@@ -1,3 +1,5 @@
+
+
 document.getElementById("filter-button").onclick = function () {
   let check = document.getElementById("filter-disable");
   check.classList.toggle("display-block");
@@ -9,10 +11,13 @@ document.getElementById("dropdownMenuButton").onclick = function(){
   dropBtn.classList.toggle("show");
 }
 
-var $grid = $('.grid').isotope({
-  itemSelector: '.element-item',
+
+// itemSelector: '.element-item',
+
+var $grid = $('.grid-item').isotope({
+  
   getSortData: {
-    name: '.name', // text from querySelector
+    name: '.name',
   }
 });
 
@@ -23,4 +28,16 @@ $('#sort-name-btn').on( 'click', function() {
 });
 
 
+document.getElementById("page-two").onclick = function(){
+  document.getElementById("page-one").classList.remove("active-pagi");
+  document.getElementById("page-two").classList.add("active-pagi");
+  document.getElementById("page-1").style.display = "none";
+  document.getElementById("page-2").style.display = "block";
+}
 
+document.getElementById("page-one").onclick = function(){
+  document.getElementById("page-one").classList.add("active-pagi");
+  document.getElementById("page-two").classList.remove("active-pagi");
+  document.getElementById("page-2").style.display = "none";
+  document.getElementById("page-1").style.display = "block";
+}
