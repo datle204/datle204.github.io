@@ -17,6 +17,7 @@ a.sign-up {
 
 .mobile-cart-detail{
   display: flex;
+  margin-top: 40px;
   justify-content: flex-start;
   border: 1px solid #dddddd;
   padding: 20px;
@@ -92,7 +93,7 @@ a.sign-up {
 button.payment {
   padding: 10px 15px;
   border: none;
-  background-color: #f15757;
+  background-color: #e56464;
   color: white;
   width: 150px;
   border-radius: 10px;
@@ -101,6 +102,10 @@ button.payment {
 
 select.gray-color{
   color: yellow;
+}
+
+button.payment:hover{
+  background-color: #f15757;
 }
 
 @media(min-width: 992px){

@@ -521,6 +521,6 @@ footer {
   }
 }
 
-textarea, input[type="text"], input[type="submit"]{
+textarea, input[type="text"], input[type="submit"], input[type="password"], [type="email"]{
   -webkit-appearance: none;
 }

@@ -80,3 +80,4 @@ deleteProduct.onclick = function(){
   deleteItem.classList.add("display-none");
   document.getElementById("emptyCart").classList.add("display-block");
 }
+

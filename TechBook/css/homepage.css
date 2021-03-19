@@ -81,7 +81,6 @@ p.price {
   border: none;
   background-color: #fd756d;
   opacity: 0.9;
-  color: white;
   font-weight: 500;
   font-size: 12px;
   line-height: 20px;
@@ -89,6 +88,9 @@ p.price {
   margin-bottom: 40px;
 }
 
+.add-to-cart a{
+  color: white;
+}
 .top-card{
   width: 100%;
   position: relative;

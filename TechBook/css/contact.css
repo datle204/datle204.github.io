@@ -17,6 +17,41 @@
   height: 1px;
   background-color: #dddddd;
 }
+.contact-title{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.input-contact{
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+
+.send-mess{
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fd756d;
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: white;
+}
+
 
 @media (min-width: 992px) {
   .main-contact {

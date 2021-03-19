@@ -104,6 +104,10 @@
   opacity: 0.8;
 }
 
+.add-to-cart-setup .add-to-cart{
+  color: #fff;
+}
+
 .add-to-cart-setup .add-to-cart:hover {
   background-color: red;
 }
